@@ -1,0 +1,98 @@
+ERROR - 2024-02-25 04:25:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        month_process WHERE Itemcode=600' at line 15 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(72): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(451): App\Models\PayrollModel->getCoinAnalysis()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-25 04:25:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+        month_process WHERE Itemcode=600' at line 15
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT
+        EmployeeCode,
+        net_salary,
+        FLOOR(net_salary / 5000) as coins_5000,
+        FLOOR((net_salary % 5000) / 1000) as coins_1000,
+        FLOOR(((net_salary % 5000) % 1000) / 500) as coins_500,
+        FLOOR((((net_salary % 5000) % 1000) % 500) / 100) as coins_100,
+        FLOOR(((((net_salary % 5000) % 1000) % 500) % 100) / 50) as coins_50,
+        FLOOR((((((net_salary % 5000) % 1000) % 500) % 100) % 50) / 20) as coins_20,
+        FLOOR(((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) / 10) as coins_10,
+        FLOOR((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) / 5) as coins_5,
+        FLOOR(((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) / 2) as coins_2,
+        FLOOR((((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) % 2) / 1) as coins_1,
+        FLOOR(((((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) % 2) / 0.5) as coins_0_50
+        FROM
+        month_process WHERE Itemcode=600', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT
+        EmployeeCode,
+        net_salary,
+        FLOOR(net_salary / 5000) as coins_5000,
+        FLOOR((net_salary % 5000) / 1000) as coins_1000,
+        FLOOR(((net_salary % 5000) % 1000) / 500) as coins_500,
+        FLOOR((((net_salary % 5000) % 1000) % 500) / 100) as coins_100,
+        FLOOR(((((net_salary % 5000) % 1000) % 500) % 100) / 50) as coins_50,
+        FLOOR((((((net_salary % 5000) % 1000) % 500) % 100) % 50) / 20) as coins_20,
+        FLOOR(((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) / 10) as coins_10,
+        FLOOR((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) / 5) as coins_5,
+        FLOOR(((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) / 2) as coins_2,
+        FLOOR((((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) % 2) / 1) as coins_1,
+        FLOOR(((((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) % 2) / 0.5) as coins_0_50
+        FROM
+        month_process WHERE Itemcode=600')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT
+        EmployeeCode,
+        net_salary,
+        FLOOR(net_salary / 5000) as coins_5000,
+        FLOOR((net_salary % 5000) / 1000) as coins_1000,
+        FLOOR(((net_salary % 5000) % 1000) / 500) as coins_500,
+        FLOOR((((net_salary % 5000) % 1000) % 500) / 100) as coins_100,
+        FLOOR(((((net_salary % 5000) % 1000) % 500) % 100) / 50) as coins_50,
+        FLOOR((((((net_salary % 5000) % 1000) % 500) % 100) % 50) / 20) as coins_20,
+        FLOOR(((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) / 10) as coins_10,
+        FLOOR((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) / 5) as coins_5,
+        FLOOR(((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) / 2) as coins_2,
+        FLOOR((((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) % 2) / 1) as coins_1,
+        FLOOR(((((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) % 2) / 0.5) as coins_0_50
+        FROM
+        month_process WHERE Itemcode=600')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+        SELECT
+        EmployeeCode,
+        net_salary,
+        FLOOR(net_salary / 5000) as coins_5000,
+        FLOOR((net_salary % 5000) / 1000) as coins_1000,
+        FLOOR(((net_salary % 5000) % 1000) / 500) as coins_500,
+        FLOOR((((net_salary % 5000) % 1000) % 500) / 100) as coins_100,
+        FLOOR(((((net_salary % 5000) % 1000) % 500) % 100) / 50) as coins_50,
+        FLOOR((((((net_salary % 5000) % 1000) % 500) % 100) % 50) / 20) as coins_20,
+        FLOOR(((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) / 10) as coins_10,
+        FLOOR((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) / 5) as coins_5,
+        FLOOR(((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) / 2) as coins_2,
+        FLOOR((((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) % 2) / 1) as coins_1,
+        FLOOR(((((((((((net_salary % 5000) % 1000) % 500) % 100) % 50) % 20) % 10) % 5) % 2) / 0.5) as coins_0_50
+        FROM
+        month_process WHERE Itemcode=600')
+ 5 APPPATH\Models\PayrollModel.php(72): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(451): App\Models\PayrollModel->getCoinAnalysis()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-25 04:55:24 --> Undefined array key "NetSalary"
+in APPPATH\Controllers\Payroll.php on line 464.
+ 1 APPPATH\Controllers\Payroll.php(464): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NetSalary"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 464)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

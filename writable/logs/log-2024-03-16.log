@@ -1,0 +1,930 @@
+CRITICAL - 2024-03-16 02:47:39 --> Invalid file: "Sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(38): view('Sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 02:48:44 --> Invalid file: "Sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(38): view('Sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 02:49:43 --> Invalid file: "Sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(38): view('Sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 02:49:48 --> Invalid file: "Sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(38): view('Sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 02:50:10 --> Invalid file: "Sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(38): view('Sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 03:15:28 --> Undefined variable $data
+in APPPATH\Controllers\Payroll.php on line 27.
+ 1 APPPATH\Controllers\Payroll.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 03:16:01 --> Undefined variable $data
+in APPPATH\Controllers\Payroll.php on line 27.
+ 1 APPPATH\Controllers\Payroll.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 03:21:07 --> Undefined variable $items
+in APPPATH\Views\sys\content_accountant.php on line 110.
+ 1 APPPATH\Views\sys\content_accountant.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 110)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(39): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 03:22:50 --> Undefined variable $items
+in APPPATH\Views\sys\content_accountant.php on line 110.
+ 1 APPPATH\Views\sys\content_accountant.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 110)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(43): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 03:23:48 --> Undefined array key "ItemCode"
+in APPPATH\Views\sys\content_accountant.php on line 112.
+ 1 APPPATH\Views\sys\content_accountant.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 112)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(43): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 04:09:07 --> Undefined variable $employees
+in APPPATH\Views\sys\content_accountant.php on line 116.
+ 1 APPPATH\Views\sys\content_accountant.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 116)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(43): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 04:09:30 --> Undefined variable $employees
+in APPPATH\Views\sys\content_accountant.php on line 116.
+ 1 APPPATH\Views\sys\content_accountant.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 116)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(43): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 04:14:36 --> Undefined variable $employees
+in APPPATH\Views\sys\content_accountant.php on line 116.
+ 1 APPPATH\Views\sys\content_accountant.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 116)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(43): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 05:30:43 --> Undefined array key "Year"
+in APPPATH\Views\sys\content_accountant.php on line 105.
+ 1 APPPATH\Views\sys\content_accountant.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Year"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 105)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(46): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 05:32:14 --> Cannot access offset of type string on string
+in APPPATH\Views\sys\content_accountant.php on line 105.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 4 APPPATH\Controllers\Sys.php(46): view('Sys/content_accountant', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 05:36:23 --> Cannot access offset of type string on string
+in APPPATH\Views\sys\content_accountant.php on line 104.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 4 APPPATH\Controllers\Sys.php(46): view('Sys/content_accountant', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 05:36:41 --> Undefined array key "Month"
+in APPPATH\Views\sys\content_accountant.php on line 104.
+ 1 APPPATH\Views\sys\content_accountant.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Month"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 104)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(46): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 05:40:49 --> Cannot access offset of type string on string
+in APPPATH\Views\sys\content_accountant.php on line 56.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 4 APPPATH\Controllers\Sys.php(46): view('Sys/content_accountant', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 06:46:49 --> Undefined array key "Year"
+in APPPATH\Views\sys\content_accountant.php on line 104.
+ 1 APPPATH\Views\sys\content_accountant.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Year"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 104)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(46): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 07:41:24 --> Object of class App\Controllers\Payroll could not be converted to string
+in APPPATH\Controllers\Payroll.php on line 594.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 07:45:34 --> Object of class App\Controllers\Payroll could not be converted to string
+in APPPATH\Controllers\Payroll.php on line 594.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 07:45:35 --> Object of class App\Controllers\Payroll could not be converted to string
+in APPPATH\Controllers\Payroll.php on line 594.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 07:45:37 --> Object of class App\Controllers\Payroll could not be converted to string
+in APPPATH\Controllers\Payroll.php on line 594.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 07:46:00 --> Object of class App\Controllers\Payroll could not be converted to string
+in APPPATH\Controllers\Payroll.php on line 594.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 07:46:01 --> Object of class App\Controllers\Payroll could not be converted to string
+in APPPATH\Controllers\Payroll.php on line 594.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 07:46:09 --> Object of class App\Controllers\Payroll could not be converted to string
+in APPPATH\Controllers\Payroll.php on line 594.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 08:00:06 --> Object of class App\Controllers\Payroll could not be converted to string
+in APPPATH\Controllers\Payroll.php on line 594.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-16 08:04:18 --> mysqli_sql_exception: Unknown column 'm.ItemType' in 'where clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(101): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(597): App\Models\PayrollModel->ViewAdditionsSalary(NULL, NULL)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-16 08:04:18 --> Unknown column 'm.ItemType' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `month_end` m INNER JOIN item i ON m.ItemCode=i.ItemCode WHERE m.ItemType=\'Addition\' AND m.Year=\'\' AND m.Month=\'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `month_end` m INNER JOIN item i ON m.ItemCode=i.ItemCode WHERE m.ItemType=\'Addition\' AND m.Year=\'\' AND m.Month=\'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `month_end` m INNER JOIN item i ON m.ItemCode=i.ItemCode WHERE m.ItemType=\'Addition\' AND m.Year=\'\' AND m.Month=\'\'')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `month_end` m INNER JOIN item i ON m.ItemCode=i.ItemCode WHERE m.ItemType=\'Addition\' AND m.Year=\'\' AND m.Month=\'\'')
+ 5 APPPATH\Models\PayrollModel.php(101): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(597): App\Models\PayrollModel->ViewAdditionsSalary(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 08:43:42 --> Undefined variable $employees
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 76.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(603): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 09:04:09 --> Undefined variable $items
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 70.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(607): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 09:24:58 --> Undefined variable $items
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 71.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(607): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 10:40:10 --> Undefined variable $employees
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 77.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 10:50:50 --> Cannot use App\Models\PayrollModel as PayrollModel because the name is already in use
+in APPPATH\Controllers\Payroll.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-16 11:01:48 --> Cannot use App\Models\PayrollModel as PayrollModel because the name is already in use
+in APPPATH\Controllers\Payroll.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-16 11:02:42 --> Undefined variable $employees
+in APPPATH\Controllers\Payroll.php on line 606.
+ 1 APPPATH\Controllers\Payroll.php(606): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 606)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 11:03:14 --> Undefined variable $employees
+in APPPATH\Controllers\Payroll.php on line 606.
+ 1 APPPATH\Controllers\Payroll.php(606): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 606)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 11:03:16 --> Undefined variable $employees
+in APPPATH\Controllers\Payroll.php on line 606.
+ 1 APPPATH\Controllers\Payroll.php(606): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 606)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 11:03:22 --> Undefined variable $employees
+in APPPATH\Controllers\Payroll.php on line 606.
+ 1 APPPATH\Controllers\Payroll.php(606): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 606)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 11:28:16 --> Cannot access offset of type string on string
+in APPPATH\Views\sys\content_accountant.php on line 104.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 4 APPPATH\Controllers\Sys.php(46): view('Sys/content_accountant', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 11:28:36 --> Array to string conversion
+in APPPATH\Views\sys\content_accountant.php on line 104.
+ 1 APPPATH\Views\sys\content_accountant.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 104)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(46): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 11:50:47 --> Undefined variable $ded
+in APPPATH\Controllers\Payroll.php on line 605.
+ 1 APPPATH\Controllers\Payroll.php(605): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ded', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 605)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 12:04:47 --> number_format(): Argument #1 ($num) must be of type float, App\Models\PayrollModel given
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): number_format(Object(App\Models\PayrollModel), 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 12:07:12 --> Undefined variable $n
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $n', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 12:14:45 --> Undefined variable $n
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $n', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 12:16:08 --> Undefined variable $n
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 128.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $n', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 128)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 12:19:21 --> Undefined variable $n
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $n', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 12:22:07 --> Undefined variable $n
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $n', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 12:49:11 --> Call to undefined method App\Models\PayrollModel::getNeAmount
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Payroll.php(604): CodeIgniter\Model->__call('getNeAmount', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 12:49:50 --> Undefined variable $n
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $n', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 12:51:30 --> Undefined variable $n
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $n', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 12:51:44 --> Undefined variable $n
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $n', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 12:55:29 --> Undefined variable $n
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $n', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:04:19 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 168.
+ 1 APPPATH\Views\sys\content_accountant.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 168)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:05:05 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:08:35 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:09:23 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:10:13 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:10:51 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:14:13 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:17:00 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:18:24 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:26:24 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:30:45 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:30:46 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:31:13 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:31:25 --> Undefined array key "Amount"
+in APPPATH\Views\sys\content_accountant.php on line 167.
+ 1 APPPATH\Views\sys\content_accountant.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 13:35:28 --> Undefined variable $n
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $n', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(610): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 14:16:11 --> Undefined array key 0
+in APPPATH\Views\sys\content_accountant.php on line 56.
+ 1 APPPATH\Views\sys\content_accountant.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 14:18:25 --> Undefined array key 0
+in APPPATH\Views\sys\content_accountant.php on line 83.
+ 1 APPPATH\Views\sys\content_accountant.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 83)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 14:20:54 --> Undefined array key 0
+in APPPATH\Views\sys\content_accountant.php on line 57.
+ 1 APPPATH\Views\sys\content_accountant.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 14:21:36 --> Division by zero
+in APPPATH\Views\sys\content_accountant.php on line 57.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 4 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 14:21:38 --> Division by zero
+in APPPATH\Views\sys\content_accountant.php on line 57.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 4 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 14:22:16 --> Division by zero
+in APPPATH\Views\sys\content_accountant.php on line 57.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 4 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 14:22:17 --> Division by zero
+in APPPATH\Views\sys\content_accountant.php on line 57.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 4 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 14:22:45 --> Call to a member function format() on bool
+in APPPATH\Views\sys\content_accountant.php on line 104.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 4 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 14:36:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\payroll\payslip.php on line 108.
+ 1 APPPATH\Views\sys\payroll\payslip.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 108)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(441): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 14:42:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 73.
+ 1 APPPATH\Controllers\Payroll.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 17:34:54 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Payroll.php(25): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 17:34:56 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Masterdetails.php(51): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Masterdetails->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdetails))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 17:34:58 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Masterdetails.php(66): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Masterdetails->view()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdetails))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 17:34:59 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Masterdetails.php(51): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Masterdetails->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdetails))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 17:35:01 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Payroll.php(25): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 17:35:02 --> Invalid file: "Sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/menu_', [], true)
+ 3 APPPATH\Controllers\Payroll.php(499): view('Sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 17:40:42 --> Undefined array key 0
+in APPPATH\Views\sys\content_accountant.php on line 56.
+ 1 APPPATH\Views\sys\content_accountant.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 17:43:21 --> Undefined array key 0
+in APPPATH\Views\sys\content_accountant.php on line 56.
+ 1 APPPATH\Views\sys\content_accountant.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 17:44:33 --> Undefined array key 1
+in APPPATH\Views\sys\content_accountant.php on line 57.
+ 1 APPPATH\Views\sys\content_accountant.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 17:44:40 --> Undefined array key 1
+in APPPATH\Views\sys\content_accountant.php on line 57.
+ 1 APPPATH\Views\sys\content_accountant.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 17:49:46 --> Undefined array key 0
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(670): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-16 17:58:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(539): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-16 17:58:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'1551\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'1551\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'1551\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = :EmployeeCode:
+AND `ItemCode` = :ItemCode:
+AND  IS NULL
+AND  IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(539): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 18:00:01 --> Undefined array key 0
+in APPPATH\Controllers\Payroll.php on line 363.
+ 1 APPPATH\Controllers\Payroll.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 363)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 18:01:02 --> Undefined array key 0
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(670): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

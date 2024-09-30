@@ -1,0 +1,22 @@
+CRITICAL - 2023-12-24 01:27:55 --> Undefined variable $list
+in APPPATH\Views\sys\loan_master\grantview.php on line 25.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\GrantLoans.php(55): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Grantloans->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Grantloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-24 01:30:13 --> Undefined variable $list
+in APPPATH\Views\sys\loan_master\grantview.php on line 25.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\GrantLoans.php(55): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Grantloans->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Grantloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

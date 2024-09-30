@@ -1,0 +1,45 @@
+CRITICAL - 2024-02-05 15:10:25 --> Call to undefined method App\Models\PayrollModel::getPaySlip
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Payroll.php(342): CodeIgniter\Model->__call('getPaySlip', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:47:03 --> Call to undefined method App\Models\PayrollModel::getPaySlip
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Payroll.php(342): CodeIgniter\Model->__call('getPaySlip', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:52:45 --> Unclosed '{' on line 79
+in APPPATH\Views\sys\payroll\payslip.php on line 114.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 3 APPPATH\Controllers\Payroll.php(350): view('sys/payroll/payslip', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:55:57 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\sys\payroll\payslip.php on line 79.
+ 1 APPPATH\Views\sys\payroll\payslip.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 79)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(350): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 16:45:19 --> Undefined array key "Year"
+in APPPATH\Views\sys\payroll\payslip.php on line 79.
+ 1 APPPATH\Views\sys\payroll\payslip.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Year"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 79)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(350): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

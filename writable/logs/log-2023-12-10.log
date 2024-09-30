@@ -1,0 +1,243 @@
+ERROR - 2023-12-10 06:10:58 --> mysqli_sql_exception: Unknown column 'l.ItemCode' in 'on clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanMasterModel.php(16): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\LoanMaster.php(57): App\Models\LoanMasterModel->getMasterDetails()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\LoanMaster->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-10 06:10:58 --> Unknown column 'l.ItemCode' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_master` l LEFT JOIN item i ON l.ItemCode=i.ItemCode ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_master` l LEFT JOIN item i ON l.ItemCode=i.ItemCode ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_master` l LEFT JOIN item i ON l.ItemCode=i.ItemCode ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_master` l LEFT JOIN item i ON l.ItemCode=i.ItemCode ')
+ 5 APPPATH\Models\LoanMasterModel.php(16): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\LoanMaster.php(57): App\Models\LoanMasterModel->getMasterDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 07:13:35 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\loan_master\approvedview.php on line 65.
+ 1 APPPATH\Views\sys\loan_master\approvedview.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\approvedview.php', 65)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\approvedview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/approvedview', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(82): view('sys/loan_master/approvedview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->approvedview()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-10 07:19:04 --> mysqli_sql_exception: Column 'Status' in where clause is ambiguous in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n  SELECT t.*, ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n  SELECT t.*, ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n  SELECT t.*, ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n  SELECT t.*, ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(43): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(79): App\Models\LoanRequestModel->getApprovedLoanDetails()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->approvedview()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-10 07:19:04 --> Column 'Status' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+  SELECT t.*, l.*, e.*, g1.FirstName as g1FirstName, g1.LastName as g1LastName, g2.FirstName as g2FirstName, g2.LastName as g2LastName, i.*,l.id as requestid FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN employee g1 ON g1.EmployeeCode=l.Guarantor1 LEFT JOIN employee g2 ON g2.EmployeeCode=l.Guarantor2 LEFT JOIN item i ON l.LoanType=i.ItemCode LEFT JOIN loan_types t ON t.Id=l.LoanType WHERE `Status`=\'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+  SELECT t.*, l.*, e.*, g1.FirstName as g1FirstName, g1.LastName as g1LastName, g2.FirstName as g2FirstName, g2.LastName as g2LastName, i.*,l.id as requestid FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN employee g1 ON g1.EmployeeCode=l.Guarantor1 LEFT JOIN employee g2 ON g2.EmployeeCode=l.Guarantor2 LEFT JOIN item i ON l.LoanType=i.ItemCode LEFT JOIN loan_types t ON t.Id=l.LoanType WHERE `Status`=\'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+  SELECT t.*, l.*, e.*, g1.FirstName as g1FirstName, g1.LastName as g1LastName, g2.FirstName as g2FirstName, g2.LastName as g2LastName, i.*,l.id as requestid FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN employee g1 ON g1.EmployeeCode=l.Guarantor1 LEFT JOIN employee g2 ON g2.EmployeeCode=l.Guarantor2 LEFT JOIN item i ON l.LoanType=i.ItemCode LEFT JOIN loan_types t ON t.Id=l.LoanType WHERE `Status`=\'1\'')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+  SELECT t.*, l.*, e.*, g1.FirstName as g1FirstName, g1.LastName as g1LastName, g2.FirstName as g2FirstName, g2.LastName as g2LastName, i.*,l.id as requestid FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN employee g1 ON g1.EmployeeCode=l.Guarantor1 LEFT JOIN employee g2 ON g2.EmployeeCode=l.Guarantor2 LEFT JOIN item i ON l.LoanType=i.ItemCode LEFT JOIN loan_types t ON t.Id=l.LoanType WHERE `Status`=\'1\'')
+ 5 APPPATH\Models\LoanRequestModel.php(43): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(79): App\Models\LoanRequestModel->getApprovedLoanDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->approvedview()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:24:17 --> Undefined array key "Capacity"
+in APPPATH\Views\sys\loan_master\grantview.php on line 53.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Capacity"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(92): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', '15')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:24:17 --> Undefined array key "Capacity"
+in APPPATH\Views\sys\loan_master\grantview.php on line 53.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Capacity"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(92): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:24:17 --> Undefined array key "Capacity"
+in APPPATH\Views\sys\loan_master\grantview.php on line 53.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Capacity"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(92): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:24:17 --> Undefined array key "Capacity"
+in APPPATH\Views\sys\loan_master\grantview.php on line 53.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Capacity"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(92): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:24:17 --> Undefined array key "Capacity"
+in APPPATH\Views\sys\loan_master\grantview.php on line 53.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Capacity"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(92): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:24:17 --> Undefined array key "Capacity"
+in APPPATH\Views\sys\loan_master\grantview.php on line 53.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Capacity"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(92): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:04:05 --> Invalid file: "sys/loan_request/approvedview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/approvedview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/approvedview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/approvedview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', '15')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:04:05 --> Invalid file: "sys/loan_request/approvedview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/approvedview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/approvedview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/approvedview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'profile-img.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:04:05 --> Invalid file: "sys/loan_request/approvedview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/approvedview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/approvedview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/approvedview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'slpost.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:04:05 --> Invalid file: "sys/loan_request/approvedview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/approvedview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/approvedview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/approvedview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:04:05 --> Invalid file: "sys/loan_request/approvedview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/approvedview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/approvedview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/approvedview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:04:05 --> Invalid file: "sys/loan_request/approvedview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/approvedview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/approvedview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/approvedview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:05:39 --> Invalid file: "sys/loan_request/grantview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/grantview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/grantview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/grantview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', '15')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:05:40 --> Invalid file: "sys/loan_request/grantview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/grantview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/grantview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/grantview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:05:40 --> Invalid file: "sys/loan_request/grantview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/grantview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/grantview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/grantview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:05:40 --> Invalid file: "sys/loan_request/grantview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/grantview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/grantview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/grantview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'slpost.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:05:40 --> Invalid file: "sys/loan_request/grantview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/grantview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/grantview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/grantview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 10:05:40 --> Invalid file: "sys/loan_request/grantview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_request/grantview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/grantview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(93): view('sys/loan_request/grantview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', 'assets', 'img', 'profile-img.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

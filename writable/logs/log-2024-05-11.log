@@ -1,0 +1,22 @@
+CRITICAL - 2024-05-11 15:02:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\payroll\payslip.php on line 117.
+ 1 APPPATH\Views\sys\payroll\payslip.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 117)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(296): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 15:11:49 --> Undefined array key "WorkedDays"
+in APPPATH\Views\sys\payroll\payslip.php on line 145.
+ 1 APPPATH\Views\sys\payroll\payslip.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "WorkedDays"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 145)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(300): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,11 @@
+CRITICAL - 2024-02-18 17:57:30 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\payroll\payslip.php on line 122.
+ 1 APPPATH\Views\sys\payroll\payslip.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 122)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(364): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

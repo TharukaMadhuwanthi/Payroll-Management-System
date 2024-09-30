@@ -1,0 +1,69 @@
+CRITICAL - 2023-11-17 14:40:02 --> Class "App\Controllers\LoanMasterModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanRequest->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanRequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:40:49 --> Class "App\Controllers\LoanMasterModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanRequest->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanRequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:40:51 --> Class "App\Controllers\LoanMasterModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanRequest->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanRequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:41:28 --> Class "App\Models\LoanRequestModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanRequest->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanRequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:42:37 --> Class "App\Models\LoanRequestModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:42:39 --> Class "App\Models\LoanRequestModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:42:47 --> Undefined variable $employee_list
+in APPPATH\Views\sys\loan_request\add.php on line 63.
+ 1 APPPATH\Views\sys\loan_request\add.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php', 63)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/add', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(50): view('sys/loan_request/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:35:54 --> Undefined array key "LoanId"
+in APPPATH\Views\sys\loan_request\add.php on line 74.
+ 1 APPPATH\Views\sys\loan_request\add.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "LoanId"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php', 74)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/add', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(53): view('sys/loan_request/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:38:21 --> Undefined array key "LoanId"
+in APPPATH\Views\sys\loan_request\add.php on line 74.
+ 1 APPPATH\Views\sys\loan_request\add.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "LoanId"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php', 74)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/add', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(56): view('sys/loan_request/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

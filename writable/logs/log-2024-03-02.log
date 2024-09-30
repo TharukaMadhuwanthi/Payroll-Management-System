@@ -1,0 +1,697 @@
+CRITICAL - 2024-03-02 05:46:00 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\coin_view.php on line 18.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(501): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 05:51:45 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\coin_view.php on line 15.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(501): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 05:52:18 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\coin_view.php on line 15.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(501): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 05:52:44 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\coin_view.php on line 15.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(501): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 05:54:05 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\coin_view.php on line 15.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(494): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 06:19:29 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\coin_view.php on line 15.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(501): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 06:20:12 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\coin_view.php on line 15.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(501): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 06:21:39 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\coin_view.php on line 15.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(501): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 06:27:34 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\coin_view.php on line 17.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(501): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 06:27:56 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\coin_view.php on line 17.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(501): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 07:28:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\payroll\payslip.php on line 98.
+ 1 APPPATH\Views\sys\payroll\payslip.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 98)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(395): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 07:29:44 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 51.
+ 1 APPPATH\Controllers\Payroll.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 07:30:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 51.
+ 1 APPPATH\Controllers\Payroll.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 07:59:58 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(25): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 08:01:52 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(25): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 08:01:54 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(25): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 08:14:52 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(25): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:08:31 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(25): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:09:57 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(26): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:11:37 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(26): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:11:39 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(26): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:11:40 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(26): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:12:24 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(26): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:12:59 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(26): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:13:28 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(26): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:13:43 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\user_account\view.php on line 58.
+ 1 APPPATH\Views\sys\user_account\view.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\view.php', 58)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/view', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(67): view('sys/user_account/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:14:20 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\user_account\view.php on line 58.
+ 1 APPPATH\Views\sys\user_account\view.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\view.php', 58)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/view', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(67): view('sys/user_account/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:16:02 --> Invalid file: "sys/substitution/sub_month.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/substitution/sub_month.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/sub_month', [], true)
+ 3 APPPATH\Controllers\SubPayroll.php(26): view('sys/substitution/sub_month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->sub_month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 10:17:56 --> mysqli_sql_exception: Column 'Id' in field list is ambiguous in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Year, M...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Year, M...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Year, M...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Year, M...')
+#4 C:\xampp\htdocs\pms\app\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 10:17:56 --> Column 'Id' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT Year, Month, SubstitutedEmployee, Count(Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT Year, Month, SubstitutedEmployee, Count(Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT Year, Month, SubstitutedEmployee, Count(Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT Year, Month, SubstitutedEmployee, Count(Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 5 APPPATH\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 10:18:54 --> mysqli_sql_exception: Column 'Id' in field list is ambiguous in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Id, Yea...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Id, Yea...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Id, Yea...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Id, Yea...')
+#4 C:\xampp\htdocs\pms\app\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 10:18:54 --> Column 'Id' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT Id, Year, Month, SubstitutedEmployee, Count(Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT Id, Year, Month, SubstitutedEmployee, Count(Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT Id, Year, Month, SubstitutedEmployee, Count(Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT Id, Year, Month, SubstitutedEmployee, Count(Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 5 APPPATH\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 10:20:26 --> mysqli_sql_exception: Unknown column 's.SubstitutedEmployeeCode' in 'where clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Year, M...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Year, M...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Year, M...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Year, M...')
+#4 C:\xampp\htdocs\pms\app\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 10:20:26 --> Unknown column 's.SubstitutedEmployeeCode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 5 APPPATH\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 10:20:54 --> mysqli_sql_exception: Unknown column 's.SubstitutedEmployeeCode' in 'where clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Year, M...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Year, M...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Year, M...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Year, M...')
+#4 C:\xampp\htdocs\pms\app\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 10:20:54 --> Unknown column 's.SubstitutedEmployeeCode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 5 APPPATH\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 10:21:39 --> mysqli_sql_exception: Unknown column 's.SubstitutedEmployeeCode' in 'where clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Year, M...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Year, M...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Year, M...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Year, M...')
+#4 C:\xampp\htdocs\pms\app\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 10:21:39 --> Unknown column 's.SubstitutedEmployeeCode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.SubstitutedEmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 5 APPPATH\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 10:22:10 --> mysqli_sql_exception: Unknown column 's.EmployeeCode' in 'where clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Year, M...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Year, M...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Year, M...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Year, M...')
+#4 C:\xampp\htdocs\pms\app\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 10:22:10 --> Unknown column 's.EmployeeCode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 5 APPPATH\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 10:23:36 --> mysqli_sql_exception: Unknown column 's.EmployeeCode' in 'on clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Year, M...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Year, M...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Year, M...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Year, M...')
+#4 C:\xampp\htdocs\pms\app\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 10:23:36 --> Unknown column 's.EmployeeCode' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE Year=\'1551\' AND Month=\'2024\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE Year=\'1551\' AND Month=\'2024\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE Year=\'1551\' AND Month=\'2024\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT Year, Month, SubstitutedEmployee, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE Year=\'1551\' AND Month=\'2024\' ')
+ 5 APPPATH\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 10:24:50 --> mysqli_sql_exception: Unknown column 's.EmployeeCode' in 'where clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Year, M...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Year, M...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Year, M...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Year, M...')
+#4 C:\xampp\htdocs\pms\app\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 10:24:50 --> Unknown column 's.EmployeeCode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT Year, Month, EmployeeCode, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT Year, Month, EmployeeCode, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT Year, Month, EmployeeCode, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT Year, Month, EmployeeCode, Count(s.Id) As Amount FROM `substitution` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 5 APPPATH\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 10:25:29 --> mysqli_sql_exception: Column 'EmployeeCode' in field list is ambiguous in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Year, M...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Year, M...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Year, M...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Year, M...')
+#4 C:\xampp\htdocs\pms\app\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 10:25:29 --> Column 'EmployeeCode' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT Year, Month, EmployeeCode, Count(s.Id) As Amount FROM `sub_month_process` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT Year, Month, EmployeeCode, Count(s.Id) As Amount FROM `sub_month_process` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT Year, Month, EmployeeCode, Count(s.Id) As Amount FROM `sub_month_process` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT Year, Month, EmployeeCode, Count(s.Id) As Amount FROM `sub_month_process` s INNER JOIN employee e ON s.EmployeeCode=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 5 APPPATH\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:25:51 --> Undefined array key 106
+in APPPATH\Controllers\SubPayroll.php on line 53.
+ 1 APPPATH\Controllers\SubPayroll.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 106', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\SubPayroll.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 10:27:34 --> Undefined array key "Amount"
+in APPPATH\Controllers\SubPayroll.php on line 54.
+ 1 APPPATH\Controllers\SubPayroll.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\SubPayroll.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 10:50:40 --> mysqli_sql_exception: Unknown column 's.SubstitutedEmployeeCode' in 'field list' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Year, M...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Year, M...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Year, M...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Year, M...')
+#4 C:\xampp\htdocs\pms\app\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 10:50:40 --> Unknown column 's.SubstitutedEmployeeCode' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT Year, Month, s.SubstitutedEmployeeCode, COUNT(s.Id)*808.33 As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT Year, Month, s.SubstitutedEmployeeCode, COUNT(s.Id)*808.33 As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT Year, Month, s.SubstitutedEmployeeCode, COUNT(s.Id)*808.33 As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT Year, Month, s.SubstitutedEmployeeCode, COUNT(s.Id)*808.33 As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 5 APPPATH\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 10:51:19 --> mysqli_sql_exception: Unknown column 's.EmployeeCode' in 'where clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Year, M...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Year, M...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Year, M...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Year, M...')
+#4 C:\xampp\htdocs\pms\app\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 10:51:19 --> Unknown column 's.EmployeeCode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT Year, Month, s.SubstitutedEmployee, COUNT(s.Id)*808.33 As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT Year, Month, s.SubstitutedEmployee, COUNT(s.Id)*808.33 As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT Year, Month, s.SubstitutedEmployee, COUNT(s.Id)*808.33 As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT Year, Month, s.SubstitutedEmployee, COUNT(s.Id)*808.33 As Amount FROM `substitution` s INNER JOIN employee e ON s.SubstitutedEmployee=e.EmployeeCode WHERE s.EmployeeCode=\'1551\' AND Year=\'2024\' AND Month=\'01\' ')
+ 5 APPPATH\Models\SubMonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\SubPayroll.php(47): App\Models\SubMonthProcessModel->getWorkReport('1551', '2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 11:14:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 51.
+ 1 APPPATH\Controllers\Payroll.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:03:49 --> Undefined array key 0
+in APPPATH\Controllers\Payroll.php on line 52.
+ 1 APPPATH\Controllers\Payroll.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:06:46 --> Undefined array key 0
+in APPPATH\Controllers\Payroll.php on line 52.
+ 1 APPPATH\Controllers\Payroll.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:08:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 51.
+ 1 APPPATH\Controllers\Payroll.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:08:36 --> Undefined array key 100
+in APPPATH\Controllers\Payroll.php on line 51.
+ 1 APPPATH\Controllers\Payroll.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 100', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:12:11 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\coin_view.php on line 17.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(501): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:16:31 --> Call to undefined function set_value()
+in APPPATH\Views\sys\payroll\coin_view.php on line 22.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/coin_view', [], true)
+ 4 APPPATH\Controllers\Payroll.php(501): view('sys/payroll/coin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->coin_count()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 13:32:57 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\payroll\payslip.php on line 98.
+ 1 APPPATH\Views\sys\payroll\payslip.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 98)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(395): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 14:04:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 51.
+ 1 APPPATH\Controllers\Payroll.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 14:41:35 --> Undefined array key "Days"
+in APPPATH\Controllers\SubPayroll.php on line 57.
+ 1 APPPATH\Controllers\SubPayroll.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Days"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\SubPayroll.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 14:43:32 --> Undefined array key "Days"
+in APPPATH\Controllers\SubPayroll.php on line 57.
+ 1 APPPATH\Controllers\SubPayroll.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Days"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\SubPayroll.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 14:43:50 --> Undefined array key "Days"
+in APPPATH\Controllers\SubPayroll.php on line 57.
+ 1 APPPATH\Controllers\SubPayroll.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Days"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\SubPayroll.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 14:49:03 --> Call to a member function getLastQuery() on array
+in APPPATH\Controllers\SubPayroll.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubPayroll->month_process()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubPayroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

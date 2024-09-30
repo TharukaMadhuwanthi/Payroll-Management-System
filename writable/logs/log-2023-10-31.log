@@ -1,0 +1,39 @@
+CRITICAL - 2023-10-31 18:05:25 --> Class "App\Controllers\InstructionsModel" not found
+in APPPATH\Controllers\Instructions.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 18:07:52 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\sys\instructions\view.php on line 43.
+ 1 APPPATH\Views\sys\instructions\view.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\instructions\\view.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\instructions\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/instructions/view', [], true)
+ 5 APPPATH\Controllers\Instructions.php(57): view('sys/instructions/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 18:10:12 --> Undefined variable $query
+in APPPATH\Models\InstructionsModel.php on line 15.
+ 1 APPPATH\Models\InstructionsModel.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\xampp\\htdocs\\pms\\app\\Models\\InstructionsModel.php', 15)
+ 2 APPPATH\Controllers\Instructions.php(53): App\Models\InstructionsModel->getInstructions()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 18:10:34 --> Call to undefined method App\Models\InstructionsModel::getInstructions
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Instructions.php(53): CodeIgniter\Model->__call('getInstructions', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 18:19:01 --> Call to undefined method App\Models\InstructionsModel::getInstructions
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Instructions.php(53): CodeIgniter\Model->__call('getInstructions', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

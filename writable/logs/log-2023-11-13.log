@@ -1,0 +1,11 @@
+CRITICAL - 2023-11-13 15:21:30 --> Undefined array key "ItemCode"
+in APPPATH\Views\sys\attendance\view.php on line 55.
+ 1 APPPATH\Views\sys\attendance\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\attendance\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\attendance\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/attendance/view', [], true)
+ 5 APPPATH\Controllers\Attendance.php(67): view('sys/attendance/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Attendance->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,463 @@
+ERROR - 2024-03-21 15:13:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(134): App\Models\EmployeeModel->getProfile(NULL)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-21 15:13:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 5 APPPATH\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(134): App\Models\EmployeeModel->getProfile(null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 15:13:44 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\WorkPlace.php(53): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\WorkPlace->view()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WorkPlace))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:14:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(134): App\Models\EmployeeModel->getProfile(NULL)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-21 15:14:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 5 APPPATH\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(134): App\Models\EmployeeModel->getProfile(null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:17:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(134): App\Models\EmployeeModel->getProfile(NULL)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-21 15:17:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 5 APPPATH\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(134): App\Models\EmployeeModel->getProfile(null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:17:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(134): App\Models\EmployeeModel->getProfile(NULL)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-21 15:17:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 5 APPPATH\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(134): App\Models\EmployeeModel->getProfile(null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:17:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(134): App\Models\EmployeeModel->getProfile(NULL)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-21 15:17:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 5 APPPATH\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(134): App\Models\EmployeeModel->getProfile(null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:17:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(139): App\Models\EmployeeModel->getProfile(NULL)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-21 15:17:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 5 APPPATH\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(139): App\Models\EmployeeModel->getProfile(null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:17:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(139): App\Models\EmployeeModel->getProfile(NULL)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-21 15:17:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN user_account a ON e.EmployeeCode=a.Name WHERE a.Name= ')
+ 5 APPPATH\Models\EmployeeModel.php(21): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(139): App\Models\EmployeeModel->getProfile(null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 15:19:25 --> Undefined variable $emp
+in APPPATH\Views\sys\employee\profile.php on line 28.
+ 1 APPPATH\Views\sys\employee\profile.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emp', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\profile.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/profile', [], true)
+ 5 APPPATH\Controllers\Employee.php(147): view('sys/employee/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 15:37:42 --> Undefined variable $emp
+in APPPATH\Views\sys\employee\profile.php on line 28.
+ 1 APPPATH\Views\sys\employee\profile.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emp', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\profile.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/profile', [], true)
+ 5 APPPATH\Controllers\Employee.php(147): view('sys/employee/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 15:37:47 --> Undefined variable $emp
+in APPPATH\Views\sys\employee\profile.php on line 28.
+ 1 APPPATH\Views\sys\employee\profile.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emp', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\profile.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/profile', [], true)
+ 5 APPPATH\Controllers\Employee.php(147): view('sys/employee/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:41:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(351): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-21 15:41:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = :EmployeeCode:
+AND `ItemCode` = :ItemCode:
+AND  IS NULL
+AND  IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(351): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:42:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(351): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-21 15:42:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = :EmployeeCode:
+AND `ItemCode` = :ItemCode:
+AND  IS NULL
+AND  IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(351): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:42:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(351): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-21 15:42:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = :EmployeeCode:
+AND `ItemCode` = :ItemCode:
+AND  IS NULL
+AND  IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(351): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-21 15:58:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(351): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-21 15:58:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = :EmployeeCode:
+AND `ItemCode` = :ItemCode:
+AND  IS NULL
+AND  IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(351): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 16:01:10 --> Undefined variable $employee_list
+in APPPATH\Views\sys\payroll\paysheet_1.php on line 24.
+ 1 APPPATH\Views\sys\payroll\paysheet_1.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet_1.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet_1.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet_1', [], true)
+ 5 APPPATH\Controllers\Payroll.php(364): view('sys/payroll/paysheet_1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 16:01:28 --> Undefined variable $employee_list
+in APPPATH\Views\sys\payroll\paysheet_1.php on line 24.
+ 1 APPPATH\Views\sys\payroll\paysheet_1.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet_1.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet_1.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet_1', [], true)
+ 5 APPPATH\Controllers\Payroll.php(364): view('sys/payroll/paysheet_1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

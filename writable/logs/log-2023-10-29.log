@@ -1,0 +1,19 @@
+CRITICAL - 2023-10-29 13:55:51 --> Class "App\Controllers\EmployeeModel" not found
+in APPPATH\Controllers\Agent.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 13:56:58 --> Class "App\Controllers\AgentModel" not found
+in APPPATH\Controllers\Agent.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 13:57:48 --> Undefined variable $employee
+in APPPATH\Controllers\Agent.php on line 42.
+ 1 APPPATH\Controllers\Agent.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Agent.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->add()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

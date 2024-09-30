@@ -1,0 +1,480 @@
+CRITICAL - 2024-03-17 02:40:38 --> Invalid file: "Sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/menu_', [], true)
+ 3 APPPATH\Controllers\Payroll.php(669): view('Sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 02:40:47 --> Invalid file: "Sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(48): view('Sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 03:30:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 139.
+ 1 APPPATH\Controllers\Employee.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Employee.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->getemployeecode()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 04:34:18 --> Undefined array key 0
+in APPPATH\Controllers\Payroll.php on line 161.
+ 1 APPPATH\Controllers\Payroll.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 161)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 08:15:32 --> Unmatched '}'
+in APPPATH\Controllers\Payroll.php on line 224.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/Payroll/month_process', 'post')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/Payroll/month_process')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/Payroll/month_process')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 08:16:08 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Payroll.php(221): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 08:18:06 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Payroll.php(221): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 08:26:10 --> syntax error, unexpected token "*", expecting end of file
+in APPPATH\Controllers\Payroll.php on line 215.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/Payroll/month_process', 'post')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/Payroll/month_process')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/Payroll/month_process')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 08:26:33 --> Unmatched '}'
+in APPPATH\Controllers\Payroll.php on line 227.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/Payroll/month_process', 'post')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/Payroll/month_process')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/Payroll/month_process')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 08:27:46 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Payroll.php(223): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 08:31:53 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Payroll.php(25): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 11:24:09 --> Undefined array key "Amount"
+in APPPATH\Views\sys\payroll\month_summary.php on line 28.
+ 1 APPPATH\Views\sys\payroll\month_summary.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\month_summary.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\month_summary.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/month_summary', [], true)
+ 5 APPPATH\Controllers\Payroll.php(224): view('sys/payroll/month_summary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 11:25:18 --> Undefined array key "Amount"
+in APPPATH\Views\sys\payroll\month_summary.php on line 28.
+ 1 APPPATH\Views\sys\payroll\month_summary.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\month_summary.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\month_summary.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/month_summary', [], true)
+ 5 APPPATH\Controllers\Payroll.php(224): view('sys/payroll/month_summary', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 11:30:06 --> Unsupported operand types: int + array
+in APPPATH\Views\sys\payroll\month_summary.php on line 35.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/month_summary', [], true)
+ 4 APPPATH\Controllers\Payroll.php(224): view('sys/payroll/month_summary', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 14:05:59 --> Undefined array key 0
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(473): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 14:54:27 --> Undefined array key 1
+in APPPATH\Views\sys\content_accountant.php on line 57.
+ 1 APPPATH\Views\sys\content_accountant.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 14:54:37 --> Undefined array key 1
+in APPPATH\Views\sys\content_accountant.php on line 57.
+ 1 APPPATH\Views\sys\content_accountant.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-17 15:03:26 --> mysqli_sql_exception: Duplicate entry '101' for key 'PRIMARY' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', NULL, false)
+#4 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\pms\app\Models\MonthendModel.php(19): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(251): App\Models\MonthendModel->processMonthend()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-17 15:03:26 --> Duplicate entry '101' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `month_end` (`Amount`, `EmployeeCode`, `Id`, `ItemCode`, `Month`, `Year`)
+VALUES (\'65000.00\',\'10003\',\'101\',\'100\',\'3\',\'2024\'), (\'5200.00\',\'10003\',\'102\',\'242\',\'3\',\'2024\'), (\'45500.00\',\'10003\',\'103\',\'107\',\'3\',\'2024\'), (\'12000.00\',\'10003\',\'104\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'10003\',\'105\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'10003\',\'106\',\'106\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'107\',\'248\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'108\',\'248\',\'3\',\'2024\'), (\'130000.00\',\'10003\',\'109\',\'200\',\'3\',\'2024\'), (\'5250.00\',\'10003\',\'110\',\'400\',\'3\',\'2024\'), (\'124750.00\',\'10003\',\'111\',\'600\',\'3\',\'2024\'), (\'50000.00\',\'20004\',\'112\',\'100\',\'3\',\'2024\'), (\'4000.00\',\'20004\',\'113\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'20004\',\'114\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'20004\',\'115\',\'105\',\'3\',\'2024\'), (\'2000.00\',\'20004\',\'116\',\'106\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'117\',\'248\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'118\',\'248\',\'3\',\'2024\'), (\'69000.00\',\'20004\',\'119\',\'200\',\'3\',\'2024\'), (\'4050.00\',\'20004\',\'120\',\'400\',\'3\',\'2024\'), (\'64950.00\',\'20004\',\'121\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'30005\',\'122\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'30005\',\'123\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'30005\',\'124\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'30005\',\'125\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'30005\',\'126\',\'106\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'127\',\'248\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'128\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'30005\',\'129\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'30005\',\'130\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'30005\',\'131\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'40006\',\'132\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'40006\',\'133\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40006\',\'134\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40006\',\'135\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'40006\',\'136\',\'106\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'137\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'138\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'40006\',\'139\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'40006\',\'140\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'40006\',\'141\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'50007\',\'142\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'50007\',\'143\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'50007\',\'144\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'50007\',\'145\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'50007\',\'146\',\'110\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'147\',\'248\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'148\',\'248\',\'3\',\'2024\'), (\'64500.00\',\'50007\',\'149\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'50007\',\'150\',\'400\',\'3\',\'2024\'), (\'60850.00\',\'50007\',\'151\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'40008\',\'152\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'40008\',\'153\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40008\',\'154\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40008\',\'155\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'40008\',\'156\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'157\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'158\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'40008\',\'159\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'40008\',\'160\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'40008\',\'161\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40009\',\'162\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40009\',\'163\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40009\',\'164\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40009\',\'165\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'40009\',\'166\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'167\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'168\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'40009\',\'169\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40009\',\'170\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'40009\',\'171\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40010\',\'172\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40010\',\'173\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40010\',\'174\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40010\',\'175\',\'105\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'176\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'177\',\'248\',\'3\',\'2024\'), (\'62000.00\',\'40010\',\'178\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40010\',\'179\',\'400\',\'3\',\'2024\'), (\'58350.00\',\'40010\',\'180\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'90011\',\'181\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'90011\',\'182\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'90011\',\'183\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'90011\',\'184\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'90011\',\'185\',\'110\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'186\',\'248\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'187\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'90011\',\'188\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'90011\',\'189\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'90011\',\'190\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'250012\',\'191\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'250012\',\'192\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'250012\',\'193\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'250012\',\'194\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'250012\',\'195\',\'110\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'196\',\'248\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'197\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'250012\',\'198\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'250012\',\'199\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'250012\',\'200\',\'600\',\'3\',\'2024\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `month_end` (`Amount`, `EmployeeCode`, `Id`, `ItemCode`, `Month`, `Year`)
+VALUES (\'65000.00\',\'10003\',\'101\',\'100\',\'3\',\'2024\'), (\'5200.00\',\'10003\',\'102\',\'242\',\'3\',\'2024\'), (\'45500.00\',\'10003\',\'103\',\'107\',\'3\',\'2024\'), (\'12000.00\',\'10003\',\'104\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'10003\',\'105\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'10003\',\'106\',\'106\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'107\',\'248\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'108\',\'248\',\'3\',\'2024\'), (\'130000.00\',\'10003\',\'109\',\'200\',\'3\',\'2024\'), (\'5250.00\',\'10003\',\'110\',\'400\',\'3\',\'2024\'), (\'124750.00\',\'10003\',\'111\',\'600\',\'3\',\'2024\'), (\'50000.00\',\'20004\',\'112\',\'100\',\'3\',\'2024\'), (\'4000.00\',\'20004\',\'113\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'20004\',\'114\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'20004\',\'115\',\'105\',\'3\',\'2024\'), (\'2000.00\',\'20004\',\'116\',\'106\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'117\',\'248\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'118\',\'248\',\'3\',\'2024\'), (\'69000.00\',\'20004\',\'119\',\'200\',\'3\',\'2024\'), (\'4050.00\',\'20004\',\'120\',\'400\',\'3\',\'2024\'), (\'64950.00\',\'20004\',\'121\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'30005\',\'122\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'30005\',\'123\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'30005\',\'124\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'30005\',\'125\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'30005\',\'126\',\'106\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'127\',\'248\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'128\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'30005\',\'129\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'30005\',\'130\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'30005\',\'131\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'40006\',\'132\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'40006\',\'133\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40006\',\'134\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40006\',\'135\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'40006\',\'136\',\'106\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'137\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'138\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'40006\',\'139\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'40006\',\'140\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'40006\',\'141\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'50007\',\'142\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'50007\',\'143\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'50007\',\'144\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'50007\',\'145\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'50007\',\'146\',\'110\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'147\',\'248\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'148\',\'248\',\'3\',\'2024\'), (\'64500.00\',\'50007\',\'149\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'50007\',\'150\',\'400\',\'3\',\'2024\'), (\'60850.00\',\'50007\',\'151\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'40008\',\'152\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'40008\',\'153\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40008\',\'154\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40008\',\'155\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'40008\',\'156\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'157\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'158\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'40008\',\'159\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'40008\',\'160\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'40008\',\'161\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40009\',\'162\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40009\',\'163\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40009\',\'164\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40009\',\'165\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'40009\',\'166\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'167\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'168\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'40009\',\'169\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40009\',\'170\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'40009\',\'171\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40010\',\'172\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40010\',\'173\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40010\',\'174\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40010\',\'175\',\'105\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'176\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'177\',\'248\',\'3\',\'2024\'), (\'62000.00\',\'40010\',\'178\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40010\',\'179\',\'400\',\'3\',\'2024\'), (\'58350.00\',\'40010\',\'180\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'90011\',\'181\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'90011\',\'182\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'90011\',\'183\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'90011\',\'184\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'90011\',\'185\',\'110\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'186\',\'248\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'187\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'90011\',\'188\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'90011\',\'189\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'90011\',\'190\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'250012\',\'191\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'250012\',\'192\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'250012\',\'193\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'250012\',\'194\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'250012\',\'195\',\'110\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'196\',\'248\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'197\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'250012\',\'198\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'250012\',\'199\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'250012\',\'200\',\'600\',\'3\',\'2024\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `month_end` (`Amount`, `EmployeeCode`, `Id`, `ItemCode`, `Month`, `Year`)
+VALUES (\'65000.00\',\'10003\',\'101\',\'100\',\'3\',\'2024\'), (\'5200.00\',\'10003\',\'102\',\'242\',\'3\',\'2024\'), (\'45500.00\',\'10003\',\'103\',\'107\',\'3\',\'2024\'), (\'12000.00\',\'10003\',\'104\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'10003\',\'105\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'10003\',\'106\',\'106\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'107\',\'248\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'108\',\'248\',\'3\',\'2024\'), (\'130000.00\',\'10003\',\'109\',\'200\',\'3\',\'2024\'), (\'5250.00\',\'10003\',\'110\',\'400\',\'3\',\'2024\'), (\'124750.00\',\'10003\',\'111\',\'600\',\'3\',\'2024\'), (\'50000.00\',\'20004\',\'112\',\'100\',\'3\',\'2024\'), (\'4000.00\',\'20004\',\'113\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'20004\',\'114\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'20004\',\'115\',\'105\',\'3\',\'2024\'), (\'2000.00\',\'20004\',\'116\',\'106\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'117\',\'248\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'118\',\'248\',\'3\',\'2024\'), (\'69000.00\',\'20004\',\'119\',\'200\',\'3\',\'2024\'), (\'4050.00\',\'20004\',\'120\',\'400\',\'3\',\'2024\'), (\'64950.00\',\'20004\',\'121\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'30005\',\'122\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'30005\',\'123\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'30005\',\'124\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'30005\',\'125\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'30005\',\'126\',\'106\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'127\',\'248\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'128\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'30005\',\'129\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'30005\',\'130\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'30005\',\'131\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'40006\',\'132\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'40006\',\'133\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40006\',\'134\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40006\',\'135\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'40006\',\'136\',\'106\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'137\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'138\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'40006\',\'139\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'40006\',\'140\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'40006\',\'141\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'50007\',\'142\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'50007\',\'143\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'50007\',\'144\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'50007\',\'145\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'50007\',\'146\',\'110\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'147\',\'248\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'148\',\'248\',\'3\',\'2024\'), (\'64500.00\',\'50007\',\'149\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'50007\',\'150\',\'400\',\'3\',\'2024\'), (\'60850.00\',\'50007\',\'151\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'40008\',\'152\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'40008\',\'153\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40008\',\'154\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40008\',\'155\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'40008\',\'156\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'157\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'158\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'40008\',\'159\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'40008\',\'160\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'40008\',\'161\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40009\',\'162\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40009\',\'163\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40009\',\'164\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40009\',\'165\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'40009\',\'166\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'167\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'168\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'40009\',\'169\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40009\',\'170\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'40009\',\'171\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40010\',\'172\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40010\',\'173\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40010\',\'174\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40010\',\'175\',\'105\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'176\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'177\',\'248\',\'3\',\'2024\'), (\'62000.00\',\'40010\',\'178\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40010\',\'179\',\'400\',\'3\',\'2024\'), (\'58350.00\',\'40010\',\'180\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'90011\',\'181\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'90011\',\'182\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'90011\',\'183\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'90011\',\'184\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'90011\',\'185\',\'110\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'186\',\'248\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'187\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'90011\',\'188\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'90011\',\'189\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'90011\',\'190\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'250012\',\'191\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'250012\',\'192\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'250012\',\'193\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'250012\',\'194\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'250012\',\'195\',\'110\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'196\',\'248\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'197\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'250012\',\'198\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'250012\',\'199\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'250012\',\'200\',\'600\',\'3\',\'2024\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `month_end` (`Amount`, `EmployeeCode`, `Id`, `ItemCode`, `Month`, `Year`)
+VALUES (\'65000.00\',\'10003\',\'101\',\'100\',\'3\',\'2024\'), (\'5200.00\',\'10003\',\'102\',\'242\',\'3\',\'2024\'), (\'45500.00\',\'10003\',\'103\',\'107\',\'3\',\'2024\'), (\'12000.00\',\'10003\',\'104\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'10003\',\'105\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'10003\',\'106\',\'106\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'107\',\'248\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'108\',\'248\',\'3\',\'2024\'), (\'130000.00\',\'10003\',\'109\',\'200\',\'3\',\'2024\'), (\'5250.00\',\'10003\',\'110\',\'400\',\'3\',\'2024\'), (\'124750.00\',\'10003\',\'111\',\'600\',\'3\',\'2024\'), (\'50000.00\',\'20004\',\'112\',\'100\',\'3\',\'2024\'), (\'4000.00\',\'20004\',\'113\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'20004\',\'114\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'20004\',\'115\',\'105\',\'3\',\'2024\'), (\'2000.00\',\'20004\',\'116\',\'106\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'117\',\'248\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'118\',\'248\',\'3\',\'2024\'), (\'69000.00\',\'20004\',\'119\',\'200\',\'3\',\'2024\'), (\'4050.00\',\'20004\',\'120\',\'400\',\'3\',\'2024\'), (\'64950.00\',\'20004\',\'121\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'30005\',\'122\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'30005\',\'123\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'30005\',\'124\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'30005\',\'125\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'30005\',\'126\',\'106\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'127\',\'248\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'128\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'30005\',\'129\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'30005\',\'130\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'30005\',\'131\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'40006\',\'132\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'40006\',\'133\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40006\',\'134\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40006\',\'135\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'40006\',\'136\',\'106\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'137\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'138\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'40006\',\'139\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'40006\',\'140\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'40006\',\'141\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'50007\',\'142\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'50007\',\'143\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'50007\',\'144\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'50007\',\'145\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'50007\',\'146\',\'110\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'147\',\'248\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'148\',\'248\',\'3\',\'2024\'), (\'64500.00\',\'50007\',\'149\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'50007\',\'150\',\'400\',\'3\',\'2024\'), (\'60850.00\',\'50007\',\'151\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'40008\',\'152\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'40008\',\'153\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40008\',\'154\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40008\',\'155\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'40008\',\'156\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'157\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'158\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'40008\',\'159\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'40008\',\'160\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'40008\',\'161\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40009\',\'162\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40009\',\'163\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40009\',\'164\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40009\',\'165\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'40009\',\'166\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'167\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'168\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'40009\',\'169\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40009\',\'170\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'40009\',\'171\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40010\',\'172\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40010\',\'173\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40010\',\'174\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40010\',\'175\',\'105\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'176\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'177\',\'248\',\'3\',\'2024\'), (\'62000.00\',\'40010\',\'178\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40010\',\'179\',\'400\',\'3\',\'2024\'), (\'58350.00\',\'40010\',\'180\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'90011\',\'181\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'90011\',\'182\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'90011\',\'183\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'90011\',\'184\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'90011\',\'185\',\'110\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'186\',\'248\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'187\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'90011\',\'188\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'90011\',\'189\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'90011\',\'190\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'250012\',\'191\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'250012\',\'192\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'250012\',\'193\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'250012\',\'194\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'250012\',\'195\',\'110\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'196\',\'248\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'197\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'250012\',\'198\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'250012\',\'199\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'250012\',\'200\',\'600\',\'3\',\'2024\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\MonthendModel.php(19): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Payroll.php(251): App\Models\MonthendModel->processMonthend()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-17 15:03:54 --> mysqli_sql_exception: Duplicate entry '101' for key 'PRIMARY' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', NULL, false)
+#4 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\pms\app\Models\MonthendModel.php(19): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(251): App\Models\MonthendModel->processMonthend()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-17 15:03:54 --> Duplicate entry '101' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `month_end` (`Amount`, `EmployeeCode`, `Id`, `ItemCode`, `Month`, `Year`)
+VALUES (\'65000.00\',\'10003\',\'101\',\'100\',\'3\',\'2024\'), (\'5200.00\',\'10003\',\'102\',\'242\',\'3\',\'2024\'), (\'45500.00\',\'10003\',\'103\',\'107\',\'3\',\'2024\'), (\'12000.00\',\'10003\',\'104\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'10003\',\'105\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'10003\',\'106\',\'106\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'107\',\'248\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'108\',\'248\',\'3\',\'2024\'), (\'130000.00\',\'10003\',\'109\',\'200\',\'3\',\'2024\'), (\'5250.00\',\'10003\',\'110\',\'400\',\'3\',\'2024\'), (\'124750.00\',\'10003\',\'111\',\'600\',\'3\',\'2024\'), (\'50000.00\',\'20004\',\'112\',\'100\',\'3\',\'2024\'), (\'4000.00\',\'20004\',\'113\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'20004\',\'114\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'20004\',\'115\',\'105\',\'3\',\'2024\'), (\'2000.00\',\'20004\',\'116\',\'106\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'117\',\'248\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'118\',\'248\',\'3\',\'2024\'), (\'69000.00\',\'20004\',\'119\',\'200\',\'3\',\'2024\'), (\'4050.00\',\'20004\',\'120\',\'400\',\'3\',\'2024\'), (\'64950.00\',\'20004\',\'121\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'30005\',\'122\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'30005\',\'123\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'30005\',\'124\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'30005\',\'125\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'30005\',\'126\',\'106\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'127\',\'248\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'128\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'30005\',\'129\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'30005\',\'130\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'30005\',\'131\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'40006\',\'132\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'40006\',\'133\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40006\',\'134\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40006\',\'135\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'40006\',\'136\',\'106\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'137\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'138\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'40006\',\'139\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'40006\',\'140\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'40006\',\'141\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'50007\',\'142\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'50007\',\'143\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'50007\',\'144\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'50007\',\'145\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'50007\',\'146\',\'110\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'147\',\'248\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'148\',\'248\',\'3\',\'2024\'), (\'64500.00\',\'50007\',\'149\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'50007\',\'150\',\'400\',\'3\',\'2024\'), (\'60850.00\',\'50007\',\'151\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'40008\',\'152\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'40008\',\'153\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40008\',\'154\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40008\',\'155\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'40008\',\'156\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'157\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'158\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'40008\',\'159\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'40008\',\'160\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'40008\',\'161\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40009\',\'162\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40009\',\'163\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40009\',\'164\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40009\',\'165\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'40009\',\'166\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'167\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'168\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'40009\',\'169\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40009\',\'170\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'40009\',\'171\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40010\',\'172\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40010\',\'173\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40010\',\'174\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40010\',\'175\',\'105\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'176\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'177\',\'248\',\'3\',\'2024\'), (\'62000.00\',\'40010\',\'178\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40010\',\'179\',\'400\',\'3\',\'2024\'), (\'58350.00\',\'40010\',\'180\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'90011\',\'181\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'90011\',\'182\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'90011\',\'183\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'90011\',\'184\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'90011\',\'185\',\'110\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'186\',\'248\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'187\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'90011\',\'188\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'90011\',\'189\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'90011\',\'190\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'250012\',\'191\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'250012\',\'192\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'250012\',\'193\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'250012\',\'194\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'250012\',\'195\',\'110\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'196\',\'248\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'197\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'250012\',\'198\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'250012\',\'199\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'250012\',\'200\',\'600\',\'3\',\'2024\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `month_end` (`Amount`, `EmployeeCode`, `Id`, `ItemCode`, `Month`, `Year`)
+VALUES (\'65000.00\',\'10003\',\'101\',\'100\',\'3\',\'2024\'), (\'5200.00\',\'10003\',\'102\',\'242\',\'3\',\'2024\'), (\'45500.00\',\'10003\',\'103\',\'107\',\'3\',\'2024\'), (\'12000.00\',\'10003\',\'104\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'10003\',\'105\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'10003\',\'106\',\'106\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'107\',\'248\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'108\',\'248\',\'3\',\'2024\'), (\'130000.00\',\'10003\',\'109\',\'200\',\'3\',\'2024\'), (\'5250.00\',\'10003\',\'110\',\'400\',\'3\',\'2024\'), (\'124750.00\',\'10003\',\'111\',\'600\',\'3\',\'2024\'), (\'50000.00\',\'20004\',\'112\',\'100\',\'3\',\'2024\'), (\'4000.00\',\'20004\',\'113\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'20004\',\'114\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'20004\',\'115\',\'105\',\'3\',\'2024\'), (\'2000.00\',\'20004\',\'116\',\'106\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'117\',\'248\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'118\',\'248\',\'3\',\'2024\'), (\'69000.00\',\'20004\',\'119\',\'200\',\'3\',\'2024\'), (\'4050.00\',\'20004\',\'120\',\'400\',\'3\',\'2024\'), (\'64950.00\',\'20004\',\'121\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'30005\',\'122\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'30005\',\'123\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'30005\',\'124\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'30005\',\'125\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'30005\',\'126\',\'106\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'127\',\'248\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'128\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'30005\',\'129\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'30005\',\'130\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'30005\',\'131\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'40006\',\'132\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'40006\',\'133\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40006\',\'134\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40006\',\'135\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'40006\',\'136\',\'106\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'137\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'138\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'40006\',\'139\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'40006\',\'140\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'40006\',\'141\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'50007\',\'142\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'50007\',\'143\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'50007\',\'144\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'50007\',\'145\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'50007\',\'146\',\'110\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'147\',\'248\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'148\',\'248\',\'3\',\'2024\'), (\'64500.00\',\'50007\',\'149\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'50007\',\'150\',\'400\',\'3\',\'2024\'), (\'60850.00\',\'50007\',\'151\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'40008\',\'152\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'40008\',\'153\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40008\',\'154\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40008\',\'155\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'40008\',\'156\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'157\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'158\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'40008\',\'159\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'40008\',\'160\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'40008\',\'161\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40009\',\'162\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40009\',\'163\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40009\',\'164\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40009\',\'165\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'40009\',\'166\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'167\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'168\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'40009\',\'169\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40009\',\'170\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'40009\',\'171\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40010\',\'172\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40010\',\'173\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40010\',\'174\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40010\',\'175\',\'105\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'176\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'177\',\'248\',\'3\',\'2024\'), (\'62000.00\',\'40010\',\'178\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40010\',\'179\',\'400\',\'3\',\'2024\'), (\'58350.00\',\'40010\',\'180\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'90011\',\'181\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'90011\',\'182\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'90011\',\'183\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'90011\',\'184\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'90011\',\'185\',\'110\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'186\',\'248\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'187\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'90011\',\'188\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'90011\',\'189\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'90011\',\'190\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'250012\',\'191\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'250012\',\'192\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'250012\',\'193\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'250012\',\'194\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'250012\',\'195\',\'110\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'196\',\'248\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'197\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'250012\',\'198\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'250012\',\'199\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'250012\',\'200\',\'600\',\'3\',\'2024\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `month_end` (`Amount`, `EmployeeCode`, `Id`, `ItemCode`, `Month`, `Year`)
+VALUES (\'65000.00\',\'10003\',\'101\',\'100\',\'3\',\'2024\'), (\'5200.00\',\'10003\',\'102\',\'242\',\'3\',\'2024\'), (\'45500.00\',\'10003\',\'103\',\'107\',\'3\',\'2024\'), (\'12000.00\',\'10003\',\'104\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'10003\',\'105\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'10003\',\'106\',\'106\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'107\',\'248\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'108\',\'248\',\'3\',\'2024\'), (\'130000.00\',\'10003\',\'109\',\'200\',\'3\',\'2024\'), (\'5250.00\',\'10003\',\'110\',\'400\',\'3\',\'2024\'), (\'124750.00\',\'10003\',\'111\',\'600\',\'3\',\'2024\'), (\'50000.00\',\'20004\',\'112\',\'100\',\'3\',\'2024\'), (\'4000.00\',\'20004\',\'113\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'20004\',\'114\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'20004\',\'115\',\'105\',\'3\',\'2024\'), (\'2000.00\',\'20004\',\'116\',\'106\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'117\',\'248\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'118\',\'248\',\'3\',\'2024\'), (\'69000.00\',\'20004\',\'119\',\'200\',\'3\',\'2024\'), (\'4050.00\',\'20004\',\'120\',\'400\',\'3\',\'2024\'), (\'64950.00\',\'20004\',\'121\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'30005\',\'122\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'30005\',\'123\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'30005\',\'124\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'30005\',\'125\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'30005\',\'126\',\'106\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'127\',\'248\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'128\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'30005\',\'129\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'30005\',\'130\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'30005\',\'131\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'40006\',\'132\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'40006\',\'133\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40006\',\'134\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40006\',\'135\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'40006\',\'136\',\'106\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'137\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'138\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'40006\',\'139\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'40006\',\'140\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'40006\',\'141\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'50007\',\'142\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'50007\',\'143\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'50007\',\'144\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'50007\',\'145\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'50007\',\'146\',\'110\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'147\',\'248\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'148\',\'248\',\'3\',\'2024\'), (\'64500.00\',\'50007\',\'149\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'50007\',\'150\',\'400\',\'3\',\'2024\'), (\'60850.00\',\'50007\',\'151\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'40008\',\'152\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'40008\',\'153\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40008\',\'154\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40008\',\'155\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'40008\',\'156\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'157\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'158\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'40008\',\'159\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'40008\',\'160\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'40008\',\'161\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40009\',\'162\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40009\',\'163\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40009\',\'164\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40009\',\'165\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'40009\',\'166\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'167\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'168\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'40009\',\'169\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40009\',\'170\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'40009\',\'171\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40010\',\'172\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40010\',\'173\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40010\',\'174\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40010\',\'175\',\'105\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'176\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'177\',\'248\',\'3\',\'2024\'), (\'62000.00\',\'40010\',\'178\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40010\',\'179\',\'400\',\'3\',\'2024\'), (\'58350.00\',\'40010\',\'180\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'90011\',\'181\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'90011\',\'182\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'90011\',\'183\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'90011\',\'184\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'90011\',\'185\',\'110\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'186\',\'248\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'187\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'90011\',\'188\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'90011\',\'189\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'90011\',\'190\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'250012\',\'191\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'250012\',\'192\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'250012\',\'193\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'250012\',\'194\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'250012\',\'195\',\'110\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'196\',\'248\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'197\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'250012\',\'198\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'250012\',\'199\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'250012\',\'200\',\'600\',\'3\',\'2024\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `month_end` (`Amount`, `EmployeeCode`, `Id`, `ItemCode`, `Month`, `Year`)
+VALUES (\'65000.00\',\'10003\',\'101\',\'100\',\'3\',\'2024\'), (\'5200.00\',\'10003\',\'102\',\'242\',\'3\',\'2024\'), (\'45500.00\',\'10003\',\'103\',\'107\',\'3\',\'2024\'), (\'12000.00\',\'10003\',\'104\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'10003\',\'105\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'10003\',\'106\',\'106\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'107\',\'248\',\'3\',\'2024\'), (\'25.00\',\'10003\',\'108\',\'248\',\'3\',\'2024\'), (\'130000.00\',\'10003\',\'109\',\'200\',\'3\',\'2024\'), (\'5250.00\',\'10003\',\'110\',\'400\',\'3\',\'2024\'), (\'124750.00\',\'10003\',\'111\',\'600\',\'3\',\'2024\'), (\'50000.00\',\'20004\',\'112\',\'100\',\'3\',\'2024\'), (\'4000.00\',\'20004\',\'113\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'20004\',\'114\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'20004\',\'115\',\'105\',\'3\',\'2024\'), (\'2000.00\',\'20004\',\'116\',\'106\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'117\',\'248\',\'3\',\'2024\'), (\'25.00\',\'20004\',\'118\',\'248\',\'3\',\'2024\'), (\'69000.00\',\'20004\',\'119\',\'200\',\'3\',\'2024\'), (\'4050.00\',\'20004\',\'120\',\'400\',\'3\',\'2024\'), (\'64950.00\',\'20004\',\'121\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'30005\',\'122\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'30005\',\'123\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'30005\',\'124\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'30005\',\'125\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'30005\',\'126\',\'106\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'127\',\'248\',\'3\',\'2024\'), (\'25.00\',\'30005\',\'128\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'30005\',\'129\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'30005\',\'130\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'30005\',\'131\',\'600\',\'3\',\'2024\'), (\'48000.00\',\'40006\',\'132\',\'100\',\'3\',\'2024\'), (\'3840.00\',\'40006\',\'133\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40006\',\'134\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40006\',\'135\',\'105\',\'3\',\'2024\'), (\'1500.00\',\'40006\',\'136\',\'106\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'137\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40006\',\'138\',\'248\',\'3\',\'2024\'), (\'66500.00\',\'40006\',\'139\',\'200\',\'3\',\'2024\'), (\'3890.00\',\'40006\',\'140\',\'400\',\'3\',\'2024\'), (\'62610.00\',\'40006\',\'141\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'50007\',\'142\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'50007\',\'143\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'50007\',\'144\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'50007\',\'145\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'50007\',\'146\',\'110\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'147\',\'248\',\'3\',\'2024\'), (\'25.00\',\'50007\',\'148\',\'248\',\'3\',\'2024\'), (\'64500.00\',\'50007\',\'149\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'50007\',\'150\',\'400\',\'3\',\'2024\'), (\'60850.00\',\'50007\',\'151\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'40008\',\'152\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'40008\',\'153\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40008\',\'154\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40008\',\'155\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'40008\',\'156\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'157\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40008\',\'158\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'40008\',\'159\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'40008\',\'160\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'40008\',\'161\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40009\',\'162\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40009\',\'163\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40009\',\'164\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40009\',\'165\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'40009\',\'166\',\'110\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'167\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40009\',\'168\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'40009\',\'169\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40009\',\'170\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'40009\',\'171\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'40010\',\'172\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'40010\',\'173\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'40010\',\'174\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'40010\',\'175\',\'105\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'176\',\'248\',\'3\',\'2024\'), (\'25.00\',\'40010\',\'177\',\'248\',\'3\',\'2024\'), (\'62000.00\',\'40010\',\'178\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'40010\',\'179\',\'400\',\'3\',\'2024\'), (\'58350.00\',\'40010\',\'180\',\'600\',\'3\',\'2024\'), (\'42000.00\',\'90011\',\'181\',\'100\',\'3\',\'2024\'), (\'3360.00\',\'90011\',\'182\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'90011\',\'183\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'90011\',\'184\',\'105\',\'3\',\'2024\'), (\'2500.00\',\'90011\',\'185\',\'110\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'186\',\'248\',\'3\',\'2024\'), (\'25.00\',\'90011\',\'187\',\'248\',\'3\',\'2024\'), (\'61500.00\',\'90011\',\'188\',\'200\',\'3\',\'2024\'), (\'3410.00\',\'90011\',\'189\',\'400\',\'3\',\'2024\'), (\'58090.00\',\'90011\',\'190\',\'600\',\'3\',\'2024\'), (\'45000.00\',\'250012\',\'191\',\'100\',\'3\',\'2024\'), (\'3600.00\',\'250012\',\'192\',\'242\',\'3\',\'2024\'), (\'12000.00\',\'250012\',\'193\',\'111\',\'3\',\'2024\'), (\'5000.00\',\'250012\',\'194\',\'105\',\'3\',\'2024\'), (\'3000.00\',\'250012\',\'195\',\'110\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'196\',\'248\',\'3\',\'2024\'), (\'25.00\',\'250012\',\'197\',\'248\',\'3\',\'2024\'), (\'65000.00\',\'250012\',\'198\',\'200\',\'3\',\'2024\'), (\'3650.00\',\'250012\',\'199\',\'400\',\'3\',\'2024\'), (\'61350.00\',\'250012\',\'200\',\'600\',\'3\',\'2024\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\MonthendModel.php(19): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Payroll.php(251): App\Models\MonthendModel->processMonthend()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 17:23:07 --> Invalid file: "Sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(48): view('Sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 17:25:58 --> Undefined array key 1
+in APPPATH\Views\sys\content_accountant.php on line 57.
+ 1 APPPATH\Views\sys\content_accountant.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 17:26:53 --> Invalid file: "sys/loan_master/grantview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_master/grantview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(108): view('sys/loan_master/grantview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('90011', '20')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 17:26:54 --> Invalid file: "sys/loan_master/grantview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_master/grantview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(108): view('sys/loan_master/grantview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('90011', 'assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 17:26:54 --> Invalid file: "sys/loan_master/grantview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_master/grantview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(108): view('sys/loan_master/grantview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('90011', 'assets', 'img', 'slpost.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 17:26:54 --> Invalid file: "sys/loan_master/grantview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_master/grantview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(108): view('sys/loan_master/grantview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('90011', 'assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 17:26:54 --> Invalid file: "sys/loan_master/grantview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/loan_master/grantview.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 3 APPPATH\Controllers\Loanrequest.php(108): view('sys/loan_master/grantview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('90011', 'assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 17:28:52 --> Undefined array key "LoanRequestId"
+in APPPATH\Views\sys\loan_master\grantview.php on line 64.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "LoanRequestId"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(108): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('90011', '20')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 17:30:04 --> Call to undefined method App\Models\LoanMasterModel::getLoanMasterDetails
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\LoanMaster.php(20): CodeIgniter\Model->__call('getLoanMasterDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->add()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 17:39:30 --> Class "App\Controllers\LoanTypesModel" not found
+in APPPATH\Controllers\LoanMaster.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 17:40:04 --> Undefined variable $rules
+in APPPATH\Controllers\LoanMaster.php on line 25.
+ 1 APPPATH\Controllers\LoanMaster.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rules', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\LoanMaster.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->add()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 18:07:55 --> Undefined array key 1
+in APPPATH\Views\sys\content_accountant.php on line 57.
+ 1 APPPATH\Views\sys\content_accountant.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\content_accountant.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/content_accountant', [], true)
+ 5 APPPATH\Controllers\Sys.php(49): view('Sys/content_accountant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-17 18:10:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(342): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-17 18:10:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = :EmployeeCode:
+AND `ItemCode` = :ItemCode:
+AND  IS NULL
+AND  IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(342): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-17 18:12:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(342): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-17 18:12:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = :EmployeeCode:
+AND `ItemCode` = :ItemCode:
+AND  IS NULL
+AND  IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(342): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-17 18:23:45 --> Call to undefined method App\Models\PayrollModel::ViewPaySheet
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Payroll.php(317): CodeIgniter\Model->__call('ViewPaySheet', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-17 18:29:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(342): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-17 18:29:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND  IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = \'10003\'
+AND `ItemCode` = \'100\'
+AND  IS NULL
+AND  IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `month_process`
+WHERE `EmployeeCode` = :EmployeeCode:
+AND `ItemCode` = :ItemCode:
+AND  IS NULL
+AND  IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(342): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

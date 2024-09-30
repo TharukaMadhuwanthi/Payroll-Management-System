@@ -1,0 +1,23 @@
+CRITICAL - 2024-02-20 17:38:05 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\Payroll.php(37): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 18:08:48 --> Call to undefined method App\Models\LoanMasterModel::getLoanMasterDetails
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\LoanMaster.php(19): CodeIgniter\Model->__call('getLoanMasterDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->add()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 18:09:18 --> Call to undefined method App\Models\LoanMasterModel::getLoanMasterDetails
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\LoanMaster.php(19): CodeIgniter\Model->__call('getLoanMasterDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->add()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

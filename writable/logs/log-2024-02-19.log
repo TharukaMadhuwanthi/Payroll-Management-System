@@ -1,0 +1,220 @@
+CRITICAL - 2024-02-19 17:08:56 --> Call to undefined method App\Models\ItemModel::fetchData()
+in APPPATH\Controllers\Payroll.php on line 383.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->getVerticalTable()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 17:10:30 --> Non-static method App\Models\PayrollModel::fetchData() cannot be called statically
+in APPPATH\Controllers\Payroll.php on line 383.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->getVerticalTable()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-19 17:13:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''month_process'' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(67): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(385): App\Models\PayrollModel->fetchData()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->getVerticalTable()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-19 17:13:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''month_process'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT EmployeeCode, Item, amount FROM \'month_process\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT EmployeeCode, Item, amount FROM \'month_process\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT EmployeeCode, Item, amount FROM \'month_process\'')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+        SELECT EmployeeCode, Item, amount FROM \'month_process\'')
+ 5 APPPATH\Models\PayrollModel.php(67): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(385): App\Models\PayrollModel->fetchData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->getVerticalTable()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-19 17:15:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''month_process'' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(67): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(385): App\Models\PayrollModel->fetchData()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->getVerticalTable()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-19 17:15:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''month_process'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT EmployeeCode, Item, Amount FROM \'month_process\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT EmployeeCode, Item, Amount FROM \'month_process\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT EmployeeCode, Item, Amount FROM \'month_process\'')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+        SELECT EmployeeCode, Item, Amount FROM \'month_process\'')
+ 5 APPPATH\Models\PayrollModel.php(67): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(385): App\Models\PayrollModel->fetchData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->getVerticalTable()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-19 17:15:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''month_process'' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(67): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(385): App\Models\PayrollModel->fetchData()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->getVerticalTable()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-19 17:15:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''month_process'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT EmployeeCode, Item, Amount FROM \'month_process\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT EmployeeCode, Item, Amount FROM \'month_process\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT EmployeeCode, Item, Amount FROM \'month_process\'')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+        SELECT EmployeeCode, Item, Amount FROM \'month_process\'')
+ 5 APPPATH\Models\PayrollModel.php(67): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(385): App\Models\PayrollModel->fetchData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->getVerticalTable()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 17:44:01 --> Undefined array key 0
+in APPPATH\Views\sys\payroll\paysheet.php on line 29.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(413): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 17:48:34 --> Undefined array key 0
+in APPPATH\Views\sys\payroll\paysheet.php on line 29.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(413): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 17:49:44 --> Undefined array key 0
+in APPPATH\Views\sys\payroll\paysheet.php on line 29.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(413): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 17:54:45 --> Array to string conversion
+in APPPATH\Views\sys\payroll\paysheet.php on line 29.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(413): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:00:21 --> Uninitialized string offset 100
+in APPPATH\Views\sys\payroll\paysheet.php on line 30.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 100', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(413): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:03:33 --> Undefined array key 0
+in APPPATH\Views\sys\payroll\paysheet.php on line 30.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(413): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:05:47 --> Array to string conversion
+in APPPATH\Views\sys\payroll\paysheet.php on line 30.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(413): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:06:49 --> Array to string conversion
+in APPPATH\Views\sys\payroll\paysheet.php on line 30.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(413): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:06:51 --> Array to string conversion
+in APPPATH\Views\sys\payroll\paysheet.php on line 30.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(413): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:12:25 --> Undefined array key 0
+in APPPATH\Views\sys\payroll\paysheet.php on line 29.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(413): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:13:13 --> Undefined array key "Amount"
+in APPPATH\Views\sys\payroll\paysheet.php on line 29.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(413): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,247 @@
+CRITICAL - 2024-03-09 07:56:33 --> Too few arguments to function App\Controllers\Useraccount::reset_password(), 0 passed in C:\xampp\htdocs\pms\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Useraccount.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->reset_password()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-09 07:59:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE Year='2024' AND Month='01'' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT ItemCod...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT ItemCod...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT ItemCod...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT ItemCod...')
+#4 C:\xampp\htdocs\pms\app\Models\MonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(350): App\Models\MonthProcessModel->getMonthSummary('2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-09 07:59:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE Year='2024' AND Month='01'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' AND Month=\'01\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' AND Month=\'01\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' AND Month=\'01\';')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' AND Month=\'01\';')
+ 5 APPPATH\Models\MonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(350): App\Models\MonthProcessModel->getMonthSummary('2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 08:07:08 --> Too few arguments to function App\Controllers\Useraccount::reset_password(), 0 passed in C:\xampp\htdocs\pms\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Useraccount.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->reset_password()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-09 08:15:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, e.*, g1.FirstName as g1FirstName, g1.LastName as g1LastName, g2.FirstName ...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nINSERT INTO `l...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nINSERT INTO `l...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nINSERT INTO `l...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nINSERT INTO `l...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanMasterModel.php(16): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\LoanMaster.php(87): App\Models\LoanMasterModel->getMasterDetails()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\LoanMaster->requestdetails()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-09 08:15:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, e.*, g1.FirstName as g1FirstName, g1.LastName as g1LastName, g2.FirstName ...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+INSERT INTO `loan_master`(`LoanRequestId`, `RYear`, `RMonth`, `RDate`, `EmployeeCode`, `LoanType`, `Capital`, `Reason`, `Guarantor1`, `Guarantor2`, `MonthlyInstallment`, `RecoverAmount`) VALUES (l.*, e.*, g1.FirstName as g1FirstName, g1.LastName as g1LastName, g2.FirstName as g2FirstName, g2.LastName as g2LastName, i.*,l.id as requestid, l.Status as rStatus FROM `loan_master` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN employee g1 ON g1.EmployeeCode=l.Guarantor1 LEFT JOIN employee g2 ON g2.EmployeeCode=l.Guarantor2 LEFT JOIN item i ON l.LoanType=i.ItemCode ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+INSERT INTO `loan_master`(`LoanRequestId`, `RYear`, `RMonth`, `RDate`, `EmployeeCode`, `LoanType`, `Capital`, `Reason`, `Guarantor1`, `Guarantor2`, `MonthlyInstallment`, `RecoverAmount`) VALUES (l.*, e.*, g1.FirstName as g1FirstName, g1.LastName as g1LastName, g2.FirstName as g2FirstName, g2.LastName as g2LastName, i.*,l.id as requestid, l.Status as rStatus FROM `loan_master` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN employee g1 ON g1.EmployeeCode=l.Guarantor1 LEFT JOIN employee g2 ON g2.EmployeeCode=l.Guarantor2 LEFT JOIN item i ON l.LoanType=i.ItemCode ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+INSERT INTO `loan_master`(`LoanRequestId`, `RYear`, `RMonth`, `RDate`, `EmployeeCode`, `LoanType`, `Capital`, `Reason`, `Guarantor1`, `Guarantor2`, `MonthlyInstallment`, `RecoverAmount`) VALUES (l.*, e.*, g1.FirstName as g1FirstName, g1.LastName as g1LastName, g2.FirstName as g2FirstName, g2.LastName as g2LastName, i.*,l.id as requestid, l.Status as rStatus FROM `loan_master` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN employee g1 ON g1.EmployeeCode=l.Guarantor1 LEFT JOIN employee g2 ON g2.EmployeeCode=l.Guarantor2 LEFT JOIN item i ON l.LoanType=i.ItemCode ;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+INSERT INTO `loan_master`(`LoanRequestId`, `RYear`, `RMonth`, `RDate`, `EmployeeCode`, `LoanType`, `Capital`, `Reason`, `Guarantor1`, `Guarantor2`, `MonthlyInstallment`, `RecoverAmount`) VALUES (l.*, e.*, g1.FirstName as g1FirstName, g1.LastName as g1LastName, g2.FirstName as g2FirstName, g2.LastName as g2LastName, i.*,l.id as requestid, l.Status as rStatus FROM `loan_master` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN employee g1 ON g1.EmployeeCode=l.Guarantor1 LEFT JOIN employee g2 ON g2.EmployeeCode=l.Guarantor2 LEFT JOIN item i ON l.LoanType=i.ItemCode ;')
+ 5 APPPATH\Models\LoanMasterModel.php(16): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\LoanMaster.php(87): App\Models\LoanMasterModel->getMasterDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->requestdetails()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 13:36:19 --> Class "App\Controllers\EmployeeModel" not found
+in APPPATH\Controllers\LoanMaster.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->requestdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 13:37:28 --> Undefined variable $da
+in APPPATH\Controllers\LoanMaster.php on line 93.
+ 1 APPPATH\Controllers\LoanMaster.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $da', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\LoanMaster.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->requestdetails()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 13:42:56 --> Undefined variable $da
+in APPPATH\Controllers\LoanMaster.php on line 93.
+ 1 APPPATH\Controllers\LoanMaster.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $da', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\LoanMaster.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->requestdetails()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 13:50:27 --> Undefined variable $gross
+in APPPATH\Views\sys\loan_master\requestdetails.php on line 83.
+ 1 APPPATH\Views\sys\loan_master\requestdetails.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gross', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\requestdetails.php', 83)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\requestdetails.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/requestdetails', [], true)
+ 5 APPPATH\Controllers\LoanMaster.php(93): view('sys/loan_master/requestdetails', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->requestdetails()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 13:51:23 --> syntax error, unexpected token "<"
+in APPPATH\Views\sys\loan_master\requestdetails.php on line 67.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/requestdetails', [], true)
+ 3 APPPATH\Controllers\LoanMaster.php(93): view('sys/loan_master/requestdetails', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->requestdetails()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 13:53:01 --> Too few arguments to function App\Controllers\Useraccount::reset_password(), 0 passed in C:\xampp\htdocs\pms\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Useraccount.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->reset_password()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 14:06:18 --> Call to undefined function form_open()
+in APPPATH\Views\web\index.php on line 88.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/index', [], true)
+ 4 APPPATH\Controllers\Web.php(10): view('web/index')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 14:06:41 --> Call to undefined function form_open()
+in APPPATH\Views\web\index.php on line 88.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/index', [], true)
+ 4 APPPATH\Controllers\Web.php(10): view('web/index')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 14:06:44 --> Call to undefined function form_open()
+in APPPATH\Views\web\index.php on line 88.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/index', [], true)
+ 4 APPPATH\Controllers\Web.php(10): view('web/index')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 14:09:47 --> Call to undefined function form_open()
+in APPPATH\Views\web\index.php on line 88.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/index', [], true)
+ 4 APPPATH\Controllers\Web.php(10): view('web/index')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 14:10:42 --> Call to undefined function form_open()
+in APPPATH\Views\web\index.php on line 88.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/index', [], true)
+ 4 APPPATH\Controllers\Web.php(10): view('web/index')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 14:10:44 --> Call to undefined function form_open()
+in APPPATH\Views\web\index.php on line 88.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/index', [], true)
+ 4 APPPATH\Controllers\Web.php(10): view('web/index')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 14:11:00 --> Call to undefined function form_open()
+in APPPATH\Views\web\index.php on line 88.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/index', [], true)
+ 4 APPPATH\Controllers\Web.php(10): view('web/index')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 14:11:02 --> Call to undefined function form_open()
+in APPPATH\Views\web\index.php on line 88.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/index', [], true)
+ 4 APPPATH\Controllers\Web.php(10): view('web/index')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 14:13:15 --> Call to undefined function form_open()
+in APPPATH\Views\web\index.php on line 88.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/index', [], true)
+ 4 APPPATH\Controllers\Web.php(10): view('web/index')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 14:19:50 --> Call to undefined function form_open()
+in APPPATH\Views\web\index.php on line 88.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/index', [], true)
+ 4 APPPATH\Controllers\Web.php(12): view('web/index')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 14:57:39 --> Class "App\Validation\UserAccountModel" not found
+in APPPATH\validation\UserRules.php on line 11.
+ 1 SYSTEMPATH\Validation\Validation.php(278): App\Validation\UserRules->validateUser('shehani123', 'username,password', [...], null, 'password')
+ 2 SYSTEMPATH\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('password', 'Password', 'shehani123', [...], [...])
+ 3 SYSTEMPATH\Controller.php(141): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(28): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->login()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 15:43:53 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Useraccount.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->login()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 15:48:31 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Useraccount.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->login()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-09 15:49:18 --> Invalid file: "Sys/menu_regional administrative officer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Sys/menu_regional administrative officer.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Sys/menu_regional administrative officer', [], true)
+ 3 APPPATH\Controllers\Sys.php(19): view('Sys/menu_regional administrative officer')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

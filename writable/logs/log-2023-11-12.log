@@ -1,0 +1,118 @@
+CRITICAL - 2023-11-12 12:35:57 --> Invalid file: "sys/attendance/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/attendance/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/attendance/add', [], true)
+ 3 APPPATH\Controllers\Attendance.php(55): view('sys/attendance/add', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Attendance->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 13:52:15 --> Invalid file: "sys/attendance/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/attendance/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/attendance/add', [], true)
+ 3 APPPATH\Controllers\Attendance.php(55): view('sys/attendance/add', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Attendance->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 14:06:36 --> Invalid file: "sys/attendance/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/attendance/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/attendance/add', [], true)
+ 3 APPPATH\Controllers\Attendance.php(51): view('sys/attendance/add', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Attendance->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 14:06:37 --> Invalid file: "sys/attendance/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/attendance/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/attendance/add', [], true)
+ 3 APPPATH\Controllers\Attendance.php(51): view('sys/attendance/add', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Attendance->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 14:06:38 --> Invalid file: "sys/attendance/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/attendance/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/attendance/add', [], true)
+ 3 APPPATH\Controllers\Attendance.php(51): view('sys/attendance/add', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Attendance->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 14:06:39 --> Invalid file: "sys/attendance/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/attendance/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/attendance/add', [], true)
+ 3 APPPATH\Controllers\Attendance.php(51): view('sys/attendance/add', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Attendance->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 14:13:33 --> Undefined variable $employee_list
+in APPPATH\Views\sys\attendence\add.php on line 27.
+ 1 APPPATH\Views\sys\attendence\add.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\attendence\\add.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\attendence\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/attendence/add', [], true)
+ 5 APPPATH\Controllers\Attendance.php(44): view('sys/attendence/add', [])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Attendance->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 14:22:52 --> Undefined variable $employee_list
+in APPPATH\Views\sys\attendence\add.php on line 27.
+ 1 APPPATH\Views\sys\attendence\add.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\attendence\\add.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\attendence\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/attendence/add', [], true)
+ 5 APPPATH\Controllers\Attendance.php(44): view('sys/attendence/add', [])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Attendance->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 14:22:54 --> Undefined variable $employee_list
+in APPPATH\Views\sys\attendence\add.php on line 27.
+ 1 APPPATH\Views\sys\attendence\add.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\attendence\\add.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\attendence\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/attendence/add', [], true)
+ 5 APPPATH\Controllers\Attendance.php(44): view('sys/attendence/add', [])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Attendance->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 18:16:26 --> mysqli_sql_exception: Unknown column 'EmployeeCode' in 'field list' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pms\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\pms\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\pms\app\Controllers\Attendance.php(40): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Attendance->add()
+#10 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+#11 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-12 18:16:28 --> Unknown column 'EmployeeCode' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `attendance` (`Year`, `Month`, `Date`, `EmployeeCode`, `Presence`, `ReliefEmployee`) VALUES (\'2023\', \'11\', \'12\', \'1\', \'1\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance` (`Year`, `Month`, `Date`, `EmployeeCode`, `Presence`, `ReliefEmployee`) VALUES (\'2023\', \'11\', \'12\', \'1\', \'1\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance` (`Year`, `Month`, `Date`, `EmployeeCode`, `Presence`, `ReliefEmployee`) VALUES (\'2023\', \'11\', \'12\', \'1\', \'1\', \'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance` (`Year`, `Month`, `Date`, `EmployeeCode`, `Presence`, `ReliefEmployee`) VALUES (:Year:, :Month:, :Date:, :EmployeeCode:, :Presence:, :ReliefEmployee:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Attendance.php(40): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Attendance->add()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attendance))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

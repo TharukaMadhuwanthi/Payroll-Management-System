@@ -1,0 +1,11 @@
+CRITICAL - 2023-11-27 15:17:20 --> Undefined array key "Employee"
+in APPPATH\Views\sys\substitution\add.php on line 82.
+ 1 APPPATH\Views\sys\substitution\add.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Employee"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\substitution\\add.php', 82)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\substitution\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/substitution/add', [], true)
+ 5 APPPATH\Controllers\Substitution.php(55): view('sys/substitution/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Substitution->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Substitution))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

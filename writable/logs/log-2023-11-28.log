@@ -1,0 +1,24 @@
+CRITICAL - 2023-11-28 14:34:11 --> Class "App\Controllers\LoanTypesModel" not found
+in APPPATH\Controllers\Loantypes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loantypes->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loantypes))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 14:35:24 --> Call to undefined method App\Models\LoanTypesModel::getLoanMasterDetails
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Loantypes.php(18): CodeIgniter\Model->__call('getLoanMasterDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loantypes->add()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loantypes))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 17:26:47 --> Undefined array key "Tenderid"
+in APPPATH\Views\sys\loan_request\view.php on line 62.
+ 1 APPPATH\Views\sys\loan_request\view.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Tenderid"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 62)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(72): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

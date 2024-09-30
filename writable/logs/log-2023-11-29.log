@@ -1,0 +1,21 @@
+CRITICAL - 2023-11-29 16:58:34 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\LoanRequestModel.php on line 30.
+ 1 APPPATH\Controllers\LoanMaster.php(76): App\Models\LoanRequestModel->getLoanStatusDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->status('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-29 17:09:26 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\LoanRequestModel.php on line 30.
+ 1 APPPATH\Controllers\LoanMaster.php(80): App\Models\LoanRequestModel->getLoanStatusDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->status('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-29 17:09:28 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\LoanRequestModel.php on line 30.
+ 1 APPPATH\Controllers\LoanMaster.php(80): App\Models\LoanRequestModel->getLoanStatusDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->status('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

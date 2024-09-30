@@ -1,0 +1,89 @@
+CRITICAL - 2024-03-04 07:35:54 --> Invalid file: "sys/SubItem/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/SubItem/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/SubItem/add', [], true)
+ 3 APPPATH\Controllers\SubItem.php(40): view('sys/SubItem/add', [])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubItem->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubItem))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 07:46:43 --> Invalid file: "sys/SubItem/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/SubItem/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/SubItem/add', [], true)
+ 3 APPPATH\Controllers\SubItem.php(40): view('sys/SubItem/add', [])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubItem->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubItem))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 07:48:34 --> Undefined variable $item_list
+in APPPATH\Views\sys\item\add.php on line 23.
+ 1 APPPATH\Views\sys\item\add.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\item\\add.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\item\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/item/add', [], true)
+ 5 APPPATH\Controllers\Item.php(48): view('sys/item/add', [])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Item->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 07:49:02 --> Undefined variable $item_list
+in APPPATH\Views\sys\item\add.php on line 23.
+ 1 APPPATH\Views\sys\item\add.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\item\\add.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\item\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/item/add', [], true)
+ 5 APPPATH\Controllers\Item.php(48): view('sys/item/add', [])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Item->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 07:54:51 --> Invalid file: "sys/SubItem/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/SubItem/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/SubItem/add', [], true)
+ 3 APPPATH\Controllers\SubItem.php(40): view('sys/SubItem/add', [])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubItem->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubItem))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 07:55:39 --> Invalid file: "sys/SubItem/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/SubItem/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/SubItem/add', [], true)
+ 3 APPPATH\Controllers\SubItem.php(40): view('sys/SubItem/add', [])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubItem->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubItem))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 07:56:59 --> Class "App\Controllers\ItemModel" not found
+in APPPATH\Controllers\SubItem.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubItem->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubItem))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 07:57:39 --> Invalid file: "sys/SubItem/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/SubItem/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/SubItem/add', [], true)
+ 3 APPPATH\Controllers\SubItem.php(44): view('sys/SubItem/add', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubItem->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubItem))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 08:00:11 --> Invalid file: "sys/SubItem/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/SubItem/add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/SubItem/add', [], true)
+ 3 APPPATH\Controllers\SubItem.php(44): view('sys/SubItem/add', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubItem->add()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubItem))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 08:35:47 --> Call to undefined method App\Models\SubMasterModel::getMasterDetails
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\SubItem.php(56): CodeIgniter\Model->__call('getMasterDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SubItem->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubItem))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

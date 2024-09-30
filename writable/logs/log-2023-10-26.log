@@ -1,0 +1,214 @@
+CRITICAL - 2023-10-26 16:51:48 --> Undefined variable $list
+in APPPATH\Views\sys\monthly_details\view.php on line 44.
+ 1 APPPATH\Views\sys\monthly_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(75): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 16:52:31 --> Class "App\Controllers\EmployeeModel" not found
+in APPPATH\Controllers\Item.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Item->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:21:13 --> Class "App\Controllers\EmployeeModel" not found
+in APPPATH\Controllers\Item.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Item->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:21:49 --> Class "App\Controllers\EmployeeModel" not found
+in APPPATH\Controllers\Item.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Item->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:21:51 --> Class "App\Controllers\EmployeeModel" not found
+in APPPATH\Controllers\Item.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Item->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:24:17 --> Undefined variable $data
+in APPPATH\Controllers\Item.php on line 52.
+ 1 APPPATH\Controllers\Item.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Item.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Item->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:24:40 --> Undefined variable $data
+in APPPATH\Controllers\Item.php on line 52.
+ 1 APPPATH\Controllers\Item.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Item.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Item->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:24:55 --> Undefined variable $list
+in APPPATH\Views\sys\item\view.php on line 43.
+ 1 APPPATH\Views\sys\item\view.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\item\\view.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\item\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/item/view', [], true)
+ 5 APPPATH\Controllers\Item.php(52): view('sys/item/view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Item->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:40:10 --> Undefined variable $list
+in APPPATH\Views\sys\monthly_details\view.php on line 44.
+ 1 APPPATH\Views\sys\monthly_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(75): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 17:45:31 --> Undefined variable $list
+in APPPATH\Views\sys\monthly_details\view.php on line 44.
+ 1 APPPATH\Views\sys\monthly_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(75): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:20:24 --> Undefined variable $list
+in APPPATH\Views\sys\monthly_details\view.php on line 44.
+ 1 APPPATH\Views\sys\monthly_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(75): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:30:03 --> Undefined variable $list
+in APPPATH\Views\sys\monthly_details\view.php on line 44.
+ 1 APPPATH\Views\sys\monthly_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(75): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:30:56 --> Undefined variable $list
+in APPPATH\Views\sys\monthly_details\view.php on line 44.
+ 1 APPPATH\Views\sys\monthly_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(75): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:31:03 --> Undefined variable $list
+in APPPATH\Views\sys\monthly_details\view.php on line 44.
+ 1 APPPATH\Views\sys\monthly_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(75): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:32:40 --> Undefined variable $list
+in APPPATH\Views\sys\monthly_details\view.php on line 44.
+ 1 APPPATH\Views\sys\monthly_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(75): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:33:59 --> Undefined variable $list
+in APPPATH\Views\sys\monthly_details\view.php on line 44.
+ 1 APPPATH\Views\sys\monthly_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(75): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:34:09 --> Undefined variable $list
+in APPPATH\Views\sys\monthly_details\view.php on line 44.
+ 1 APPPATH\Views\sys\monthly_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(75): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:34:21 --> Undefined variable $list
+in APPPATH\Views\sys\monthly_details\view.php on line 44.
+ 1 APPPATH\Views\sys\monthly_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(75): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:34:58 --> Undefined variable $list
+in APPPATH\Views\sys\master_details\view.php on line 44.
+ 1 APPPATH\Views\sys\master_details\view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\master_details\\view.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\master_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/master_details/view', [], true)
+ 5 APPPATH\Controllers\Masterdetails.php(64): view('sys/master_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Masterdetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:37:06 --> Undefined variable $list
+in APPPATH\Views\sys\master_details\view.php on line 43.
+ 1 APPPATH\Views\sys\master_details\view.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\master_details\\view.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\master_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/master_details/view', [], true)
+ 5 APPPATH\Controllers\Masterdetails.php(64): view('sys/master_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Masterdetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masterdetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:46:05 --> Undefined array key "ItemName"
+in APPPATH\Views\sys\monthly_details\view.php on line 47.
+ 1 APPPATH\Views\sys\monthly_details\view.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(66): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 18:49:01 --> Undefined array key "ItemName"
+in APPPATH\Views\sys\monthly_details\view.php on line 47.
+ 1 APPPATH\Views\sys\monthly_details\view.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\monthly_details\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/monthly_details/view', [], true)
+ 5 APPPATH\Controllers\Monthlydetails.php(66): view('sys/monthly_details/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Monthlydetails->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monthlydetails))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

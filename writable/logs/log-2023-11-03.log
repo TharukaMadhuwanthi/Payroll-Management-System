@@ -1,0 +1,58 @@
+CRITICAL - 2023-11-03 16:52:12 --> Call to undefined method App\Models\InstructionsModel::getInstructions
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Instructions.php(53): CodeIgniter\Model->__call('getInstructions', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 16:53:39 --> Call to undefined method App\Models\InstructionsModel::getInstructions
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Instructions.php(53): CodeIgniter\Model->__call('getInstructions', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 16:54:27 --> Undefined array key "LastName"
+in APPPATH\Views\sys\agent\view.php on line 35.
+ 1 APPPATH\Views\sys\agent\view.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "LastName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\view.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/view', [], true)
+ 5 APPPATH\Controllers\Agent.php(61): view('sys/agent/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 17:24:46 --> Undefined array key "ItemName"
+in APPPATH\Views\sys\agent\view.php on line 36.
+ 1 APPPATH\Views\sys\agent\view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\view.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/view', [], true)
+ 5 APPPATH\Controllers\Agent.php(61): view('sys/agent/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 17:28:43 --> Undefined array key "ItemName"
+in APPPATH\Views\sys\agent\view.php on line 36.
+ 1 APPPATH\Views\sys\agent\view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\view.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/view', [], true)
+ 5 APPPATH\Controllers\Agent.php(61): view('sys/agent/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 17:28:45 --> Undefined array key "ItemName"
+in APPPATH\Views\sys\agent\view.php on line 36.
+ 1 APPPATH\Views\sys\agent\view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\view.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/view', [], true)
+ 5 APPPATH\Controllers\Agent.php(61): view('sys/agent/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

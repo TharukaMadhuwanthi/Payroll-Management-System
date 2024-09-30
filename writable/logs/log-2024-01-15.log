@@ -1,0 +1,332 @@
+CRITICAL - 2024-01-15 03:52:45 --> Call to undefined method App\Models\LoanMasterModel::getLoanMasterDetails
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\LoanMaster.php(19): CodeIgniter\Model->__call('getLoanMasterDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->add()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 04:18:02 --> Unclosed '{' on line 25
+in APPPATH\Views\sys\payroll\month.php on line 88.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/month', [], true)
+ 3 APPPATH\Controllers\Payroll.php(21): view('sys/payroll/month')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 04:19:22 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\month.php on line 15.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/month', [], true)
+ 4 APPPATH\Controllers\Payroll.php(21): view('sys/payroll/month')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 04:22:05 --> Call to undefined function form_open()
+in APPPATH\Views\sys\payroll\month.php on line 15.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/month', [], true)
+ 4 APPPATH\Controllers\Payroll.php(21): view('sys/payroll/month')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 04:23:00 --> Call to undefined function form_close()
+in APPPATH\Views\sys\payroll\month.php on line 72.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/month', [], true)
+ 4 APPPATH\Controllers\Payroll.php(21): view('sys/payroll/month')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 04:30:27 --> Class "App\Models\PayrollModel" not found
+in APPPATH\Controllers\Payroll.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 05:13:06 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Payroll.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 06:02:34 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\Payroll.php(43): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 07:59:03 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pms\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\pms\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(63): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+#10 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#11 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-15 07:59:03 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `month_process` (`Year`, `Month`, `EmployeeCode`, `ItemCode`, `Amount`) VALUES (\'Year\', \'Month\', \'1551\', \'111\', (\'13\',\'1551\',\'111\',\'7500.00\'))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `month_process` (`Year`, `Month`, `EmployeeCode`, `ItemCode`, `Amount`) VALUES (\'Year\', \'Month\', \'1551\', \'111\', (\'13\',\'1551\',\'111\',\'7500.00\'))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `month_process` (`Year`, `Month`, `EmployeeCode`, `ItemCode`, `Amount`) VALUES (\'Year\', \'Month\', \'1551\', \'111\', (\'13\',\'1551\',\'111\',\'7500.00\'))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `month_process` (`Year`, `Month`, `EmployeeCode`, `ItemCode`, `Amount`) VALUES (:Year:, :Month:, :EmployeeCode:, :ItemCode:, :Amount:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Payroll.php(63): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 07:59:13 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pms\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\pms\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(63): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+#10 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#11 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-15 07:59:13 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `month_process` (`Year`, `Month`, `EmployeeCode`, `ItemCode`, `Amount`) VALUES (\'2020\', \'02\', \'1551\', \'111\', (\'13\',\'1551\',\'111\',\'7500.00\'))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `month_process` (`Year`, `Month`, `EmployeeCode`, `ItemCode`, `Amount`) VALUES (\'2020\', \'02\', \'1551\', \'111\', (\'13\',\'1551\',\'111\',\'7500.00\'))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `month_process` (`Year`, `Month`, `EmployeeCode`, `ItemCode`, `Amount`) VALUES (\'2020\', \'02\', \'1551\', \'111\', (\'13\',\'1551\',\'111\',\'7500.00\'))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `month_process` (`Year`, `Month`, `EmployeeCode`, `ItemCode`, `Amount`) VALUES (:Year:, :Month:, :EmployeeCode:, :ItemCode:, :Amount:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Payroll.php(63): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 08:05:38 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 77.
+ 1 APPPATH\Controllers\Payroll.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 08:07:47 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 77.
+ 1 APPPATH\Controllers\Payroll.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 08:10:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 79.
+ 1 APPPATH\Controllers\Payroll.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 08:11:02 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 79.
+ 1 APPPATH\Controllers\Payroll.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 08:11:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 79.
+ 1 APPPATH\Controllers\Payroll.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 08:13:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 78.
+ 1 APPPATH\Controllers\Payroll.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 08:53:26 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 75.
+ 1 APPPATH\Controllers\Payroll.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 08:54:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 75.
+ 1 APPPATH\Controllers\Payroll.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 08:56:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 79.
+ 1 APPPATH\Controllers\Payroll.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 10:15:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 79.
+ 1 APPPATH\Controllers\Payroll.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 10:16:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 79.
+ 1 APPPATH\Controllers\Payroll.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 10:29:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 89.
+ 1 APPPATH\Controllers\Payroll.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 13:44:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 45.
+ 1 APPPATH\Controllers\Payroll.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 14:51:37 --> Undefined array key "MonthlyDeduction"
+in APPPATH\Controllers\Payroll.php on line 124.
+ 1 APPPATH\Controllers\Payroll.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "MonthlyDeduction"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 14:54:27 --> Undefined array key "MonthlyDeduction"
+in APPPATH\Controllers\Payroll.php on line 124.
+ 1 APPPATH\Controllers\Payroll.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "MonthlyDeduction"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 14:54:54 --> Undefined array key "MonthlyDeduction"
+in APPPATH\Controllers\Payroll.php on line 124.
+ 1 APPPATH\Controllers\Payroll.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "MonthlyDeduction"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 14:57:37 --> Undefined array key "MonthlyDeduction"
+in APPPATH\Controllers\Payroll.php on line 124.
+ 1 APPPATH\Controllers\Payroll.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "MonthlyDeduction"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 14:58:03 --> Undefined array key "MonthlyDeduction"
+in APPPATH\Controllers\Payroll.php on line 124.
+ 1 APPPATH\Controllers\Payroll.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "MonthlyDeduction"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 14:58:17 --> Undefined array key "MonthlyDeduction"
+in APPPATH\Controllers\Payroll.php on line 124.
+ 1 APPPATH\Controllers\Payroll.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "MonthlyDeduction"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 17:43:28 --> Undefined array key "MonthlyDeduction"
+in APPPATH\Controllers\Payroll.php on line 124.
+ 1 APPPATH\Controllers\Payroll.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "MonthlyDeduction"', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 18:19:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 135.
+ 1 APPPATH\Controllers\Payroll.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 18:21:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 135.
+ 1 APPPATH\Controllers\Payroll.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 18:21:19 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 135.
+ 1 APPPATH\Controllers\Payroll.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 18:24:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 135.
+ 1 APPPATH\Controllers\Payroll.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 18:25:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 135.
+ 1 APPPATH\Controllers\Payroll.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 18:27:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 135.
+ 1 APPPATH\Controllers\Payroll.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 18:37:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 135.
+ 1 APPPATH\Controllers\Payroll.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 18:37:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 135.
+ 1 APPPATH\Controllers\Payroll.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 18:38:59 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Payroll.php on line 135.
+ 1 APPPATH\Controllers\Payroll.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

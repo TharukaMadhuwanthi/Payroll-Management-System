@@ -1,0 +1,281 @@
+CRITICAL - 2024-02-04 01:46:09 --> Undefined property: App\Controllers\Payroll::$load
+in APPPATH\Controllers\Payroll.php on line 334.
+ 1 APPPATH\Controllers\Payroll.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Payroll::$load', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 01:48:01 --> Undefined property: App\Controllers\Payroll::$load
+in APPPATH\Controllers\Payroll.php on line 334.
+ 1 APPPATH\Controllers\Payroll.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Payroll::$load', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-04 01:48:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group_by('ItemCode')' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n      SELECT I...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n      SELECT I...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n      SELECT I...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n      SELECT I...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(36): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(337): App\Models\PayrollModel->getPaySlip(1551)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-04 01:48:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group_by('ItemCode')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')')
+ 5 APPPATH\Models\PayrollModel.php(36): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(337): App\Models\PayrollModel->getPaySlip(1551)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-04 01:49:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group_by('ItemCode')' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n      SELECT I...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n      SELECT I...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n      SELECT I...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n      SELECT I...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(36): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(337): App\Models\PayrollModel->getPaySlip(1551)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-04 01:49:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group_by('ItemCode')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')')
+ 5 APPPATH\Models\PayrollModel.php(36): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(337): App\Models\PayrollModel->getPaySlip(1551)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-04 01:49:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group_by('ItemCode')' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n      SELECT I...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n      SELECT I...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n      SELECT I...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n      SELECT I...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(36): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(337): App\Models\PayrollModel->getPaySlip(1551)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-04 01:49:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group_by('ItemCode')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group_by(\'ItemCode\')')
+ 5 APPPATH\Models\PayrollModel.php(36): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(337): App\Models\PayrollModel->getPaySlip(1551)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-04 01:49:45 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n      SELECT I...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n      SELECT I...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n      SELECT I...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n      SELECT I...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(36): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(337): App\Models\PayrollModel->getPaySlip(1551)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-04 01:49:45 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group by(\'ItemCode\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group by(\'ItemCode\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group by(\'ItemCode\')')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE (\'EmployeeCode\', 1551) group by(\'ItemCode\')')
+ 5 APPPATH\Models\PayrollModel.php(36): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(337): App\Models\PayrollModel->getPaySlip(1551)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-04 02:02:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 1551 group by('ItemCode')' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n      SELECT I...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n      SELECT I...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n      SELECT I...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n      SELECT I...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(43): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(332): App\Models\PayrollModel->getPaySlip(1551)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-04 02:02:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 1551 group by('ItemCode')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE \'EmployeeCode\'== 1551 group by(\'ItemCode\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+      SELECT ItemCode ,Amount FROM month_process WHERE \'EmployeeCode\'== 1551 group by(\'ItemCode\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+      SELECT ItemCode ,Amount FROM month_process WHERE \'EmployeeCode\'== 1551 group by(\'ItemCode\')')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE \'EmployeeCode\'== 1551 group by(\'ItemCode\')')
+ 5 APPPATH\Models\PayrollModel.php(43): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(332): App\Models\PayrollModel->getPaySlip(1551)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 02:09:38 --> Object of class App\Models\PayrollModel could not be converted to string
+in APPPATH\Models\PayrollModel.php on line 44.
+ 1 APPPATH\Controllers\Payroll.php(331): App\Models\PayrollModel->getPaySlip(Object(App\Models\PayrollModel))
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 16:55:25 --> Undefined property: App\Controllers\Payroll::$load
+in APPPATH\Controllers\Payroll.php on line 329.
+ 1 APPPATH\Controllers\Payroll.php(329): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Payroll::$load', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 329)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 16:56:04 --> Undefined property: App\Controllers\Payroll::$load
+in APPPATH\Controllers\Payroll.php on line 329.
+ 1 APPPATH\Controllers\Payroll.php(329): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Payroll::$load', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 329)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-04 17:01:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 1551 group by('ItemCode')' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n      SELECT I...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n      SELECT I...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n      SELECT I...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n      SELECT I...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(43): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(332): App\Models\PayrollModel->getPaySlip(1551)
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-04 17:01:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 1551 group by('ItemCode')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE \'EmployeeCode\'== 1551 group by(\'ItemCode\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+      SELECT ItemCode ,Amount FROM month_process WHERE \'EmployeeCode\'== 1551 group by(\'ItemCode\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+      SELECT ItemCode ,Amount FROM month_process WHERE \'EmployeeCode\'== 1551 group by(\'ItemCode\')')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+      SELECT ItemCode ,Amount FROM month_process WHERE \'EmployeeCode\'== 1551 group by(\'ItemCode\')')
+ 5 APPPATH\Models\PayrollModel.php(43): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(332): App\Models\PayrollModel->getPaySlip(1551)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 17:05:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\PayrollModel.php on line 50.
+ 1 APPPATH\Controllers\Payroll.php(332): App\Models\PayrollModel->getPaySlip(1551)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 17:06:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\PayrollModel.php on line 50.
+ 1 APPPATH\Controllers\Payroll.php(332): App\Models\PayrollModel->getPaySlip(1551)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 17:11:34 --> Undefined property: stdClass::$Amount
+in APPPATH\Controllers\Payroll.php on line 335.
+ 1 APPPATH\Controllers\Payroll.php(335): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Amount', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 335)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 17:13:16 --> view(): Argument #2 ($data) must be of type array, int given, called in C:\xampp\htdocs\pms\app\Controllers\Payroll.php on line 339
+in SYSTEMPATH\Common.php on line 1164.
+ 1 APPPATH\Controllers\Payroll.php(339): view('sys/payroll/payslip', 1551)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 17:20:50 --> Undefined variable $employee_list
+in APPPATH\Views\sys\payroll\payslip.php on line 24.
+ 1 APPPATH\Views\sys\payroll\payslip.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(339): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 17:20:51 --> Undefined variable $employee_list
+in APPPATH\Views\sys\payroll\payslip.php on line 24.
+ 1 APPPATH\Views\sys\payroll\payslip.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(339): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 17:20:52 --> Undefined variable $employee_list
+in APPPATH\Views\sys\payroll\payslip.php on line 24.
+ 1 APPPATH\Views\sys\payroll\payslip.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(339): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-04 17:20:53 --> Undefined variable $employee_list
+in APPPATH\Views\sys\payroll\payslip.php on line 24.
+ 1 APPPATH\Views\sys\payroll\payslip.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(339): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

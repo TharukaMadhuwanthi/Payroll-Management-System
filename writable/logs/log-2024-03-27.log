@@ -1,0 +1,362 @@
+ERROR - 2024-03-27 10:14:50 --> mysqli_sql_exception: Unknown column 'InstructionId' in 'where clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Instructions.php(56): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Instructions->view()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-27 10:14:50 --> Unknown column 'InstructionId' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `instructions`
+WHERE `InstructionId` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `instructions`
+WHERE `InstructionId` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `instructions`
+WHERE `InstructionId` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `instructions`
+WHERE `InstructionId` = :InstructionId:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Instructions.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 10:17:19 --> mysqli_sql_exception: Unknown column 'InstructionId' in 'where clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Instructions.php(56): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Instructions->view()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-27 10:17:19 --> Unknown column 'InstructionId' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `instructions`
+WHERE `InstructionId` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `instructions`
+WHERE `InstructionId` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `instructions`
+WHERE `InstructionId` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `instructions`
+WHERE `InstructionId` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Instructions.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 10:19:36 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\user_account\view.php on line 58.
+ 1 APPPATH\Views\sys\user_account\view.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\view.php', 58)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/view', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(227): view('sys/user_account/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 10:25:39 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\user_account\view.php on line 58.
+ 1 APPPATH\Views\sys\user_account\view.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\view.php', 58)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/view', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(227): view('sys/user_account/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 10:42:18 --> Class "App\Controllers\EmployeeModel" not found
+in APPPATH\Controllers\Agent.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 10:43:11 --> mysqli_sql_exception: Unknown column 'ItemCode' in 'where clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Agent.php(60): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Agent->view()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-27 10:43:11 --> Unknown column 'ItemCode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `agent`
+WHERE `ItemCode` = \'219\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `agent`
+WHERE `ItemCode` = \'219\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `agent`
+WHERE `ItemCode` = \'219\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `agent`
+WHERE `ItemCode` = :ItemCode:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Agent.php(60): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->view()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 10:45:01 --> Undefined array key "ItemCode"
+in APPPATH\Views\sys\agent\view.php on line 58.
+ 1 APPPATH\Views\sys\agent\view.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\view.php', 58)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/view', [], true)
+ 5 APPPATH\Controllers\Agent.php(75): view('sys/agent/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 17:12:16 --> Undefined variable $items
+in APPPATH\Views\sys\payroll\paysheet.php on line 71.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(365): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 17:19:05 --> Undefined variable $items
+in APPPATH\Views\sys\payroll\paysheet.php on line 71.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(365): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 17:22:01 --> Undefined variable $items
+in APPPATH\Views\sys\payroll\paysheet.php on line 71.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(365): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 17:31:14 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH\Views\sys\payroll\paysheet.php on line 72.
+ 1 APPPATH\Views\sys\payroll\paysheet.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php', 72)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\paysheet.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/paysheet', [], true)
+ 5 APPPATH\Controllers\Payroll.php(367): view('sys/payroll/paysheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->paysheet()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 18:20:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode= GROUP BY e.EmployeeCode' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 18:20:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode= GROUP BY e.EmployeeCode' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= GROUP BY e.EmployeeCode;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= GROUP BY e.EmployeeCode;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= GROUP BY e.EmployeeCode;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= GROUP BY e.EmployeeCode;')
+ 5 APPPATH\Models\EmployeeModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 18:22:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode=' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 18:22:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 5 APPPATH\Models\EmployeeModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 18:22:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode=' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 18:22:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 5 APPPATH\Models\EmployeeModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 18:23:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode=' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(18): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 18:23:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 5 APPPATH\Models\EmployeeModel.php(18): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 18:23:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode=' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(18): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 18:23:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 5 APPPATH\Models\EmployeeModel.php(18): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-27 18:23:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode=' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(18): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-27 18:23:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WERE e.EmployeeCode=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesName INNER JOIN work_place w ON e.WorkPlace=w.Place WERE e.EmployeeCode= ;')
+ 5 APPPATH\Models\EmployeeModel.php(18): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Employee.php(99): App\Models\EmployeeModel->getEmployeeDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

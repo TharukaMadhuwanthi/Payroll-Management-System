@@ -1,0 +1,210 @@
+ERROR - 2023-12-02 02:25:30 --> mysqli_sql_exception: Unknown column 'InstructionNo' in 'field list' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `in...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pms\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\pms\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\pms\app\Controllers\Instructions.php(32): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Instructions->add()
+#10 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+#11 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-02 02:25:31 --> Unknown column 'InstructionNo' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `instructions` (`InstructionNo`, `Year`, `Month`, `Date`, `Instruction`) VALUES (\'pubad\', \'2023\', \'12\', \'2\', \'kkkkkkkkkkkkk\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `instructions` (`InstructionNo`, `Year`, `Month`, `Date`, `Instruction`) VALUES (\'pubad\', \'2023\', \'12\', \'2\', \'kkkkkkkkkkkkk\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `instructions` (`InstructionNo`, `Year`, `Month`, `Date`, `Instruction`) VALUES (\'pubad\', \'2023\', \'12\', \'2\', \'kkkkkkkkkkkkk\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `instructions` (`InstructionNo`, `Year`, `Month`, `Date`, `Instruction`) VALUES (:InstructionNo:, :Year:, :Month:, :Date:, :Instruction:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Instructions.php(32): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->add()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-02 02:41:09 --> Undefined array key "InstructionId"
+in APPPATH\Views\sys\instructions\view.php on line 49.
+ 1 APPPATH\Views\sys\instructions\view.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "InstructionId"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\instructions\\view.php', 49)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\instructions\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/instructions/view', [], true)
+ 5 APPPATH\Controllers\Instructions.php(59): view('sys/instructions/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-02 06:30:47 --> mysqli_sql_exception: Not unique table/alias: 'e' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-02 06:30:47 --> Not unique table/alias: 'e'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 5 APPPATH\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-02 06:38:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_re...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-02 06:38:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_re...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 5 APPPATH\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-02 06:38:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_re...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-02 06:38:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_re...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 5 APPPATH\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-02 06:38:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_re...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-02 06:38:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_re...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 5 APPPATH\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-02 06:38:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_re...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-02 06:38:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_re...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON l.LoanType=i.ItemCode `loan_request` l LEFT JOIN employee e ON l.Guarantor1=e.EmployeeCode `loan_request` l LEFT JOIN employee e ON l.Guarantor2=e.EmployeeCode;')
+ 5 APPPATH\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-02 06:45:38 --> Undefined array key "ItemCode"
+in APPPATH\Views\sys\loan_request\view.php on line 56.
+ 1 APPPATH\Views\sys\loan_request\view.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(74): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-02 06:55:06 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getLoanRequest()
+in APPPATH\Controllers\Loanrequest.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-02 06:57:17 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getLoanRequest()
+in APPPATH\Controllers\Loanrequest.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

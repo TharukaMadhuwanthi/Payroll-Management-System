@@ -1,0 +1,7 @@
+CRITICAL - 2024-01-28 16:33:02 --> Attempt to read property "Amount" on array
+in APPPATH\Controllers\Payroll.php on line 145.
+ 1 APPPATH\Controllers\Payroll.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Amount" on array', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Payroll.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

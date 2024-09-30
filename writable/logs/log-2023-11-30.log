@@ -1,0 +1,528 @@
+CRITICAL - 2023-11-30 06:00:14 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\LoanRequestModel.php on line 30.
+ 1 APPPATH\Controllers\LoanMaster.php(80): App\Models\LoanRequestModel->getLoanStatusDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->status('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 09:07:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `loan_request`(`Status`) VALUES ('1')' at line 2 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\n            IN...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\n            IN...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\n            IN...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\n            IN...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(28): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\LoanMaster.php(80): App\Models\LoanRequestModel->getLoanStatusDetails()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\LoanMaster->status('1551')
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 09:07:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `loan_request`(`Status`) VALUES ('1')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            INSERT INTO `approved_loans`(`Id`, `Year`, `Month`, `Date`, `Employee`, `LoanType`, `Amount`, `Reason`, `Guarantor1`, `Guarantor2`, `Status`) VALUES (\'[value-1]\',\'[value-2]\',\'[value-3]\',\'[value-4]\',\'[value-5]\',\'[value-6]\',\'[value-7]\',\'[value-8]\',\'[value-9]\',\'[value-10]\',\'[value-11]\')
+    INSERT INTO `loan_request`(`Status`) VALUES (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            INSERT INTO `approved_loans`(`Id`, `Year`, `Month`, `Date`, `Employee`, `LoanType`, `Amount`, `Reason`, `Guarantor1`, `Guarantor2`, `Status`) VALUES (\'[value-1]\',\'[value-2]\',\'[value-3]\',\'[value-4]\',\'[value-5]\',\'[value-6]\',\'[value-7]\',\'[value-8]\',\'[value-9]\',\'[value-10]\',\'[value-11]\')
+    INSERT INTO `loan_request`(`Status`) VALUES (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            INSERT INTO `approved_loans`(`Id`, `Year`, `Month`, `Date`, `Employee`, `LoanType`, `Amount`, `Reason`, `Guarantor1`, `Guarantor2`, `Status`) VALUES (\'[value-1]\',\'[value-2]\',\'[value-3]\',\'[value-4]\',\'[value-5]\',\'[value-6]\',\'[value-7]\',\'[value-8]\',\'[value-9]\',\'[value-10]\',\'[value-11]\')
+    INSERT INTO `loan_request`(`Status`) VALUES (\'1\')')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+            INSERT INTO `approved_loans`(`Id`, `Year`, `Month`, `Date`, `Employee`, `LoanType`, `Amount`, `Reason`, `Guarantor1`, `Guarantor2`, `Status`) VALUES (\'[value-1]\',\'[value-2]\',\'[value-3]\',\'[value-4]\',\'[value-5]\',\'[value-6]\',\'[value-7]\',\'[value-8]\',\'[value-9]\',\'[value-10]\',\'[value-11]\')
+    INSERT INTO `loan_request`(`Status`) VALUES (\'1\')')
+ 5 APPPATH\Models\LoanRequestModel.php(28): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\LoanMaster.php(80): App\Models\LoanRequestModel->getLoanStatusDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->status('1551')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:08:47 --> Call to undefined method App\Models\LoanRequestModel::getLoanStatusDetails
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\LoanMaster.php(80): CodeIgniter\Model->__call('getLoanStatusDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->status('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:13:31 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(23): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:13:32 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(23): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:13:32 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(23): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:13:32 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(23): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:13:32 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(23): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:13:32 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(23): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:14 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:14 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:14 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:14 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:14 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:14 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:15 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:15 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:15 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:15 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:15 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:16:15 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:04 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:04 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:04 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:04 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:04 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:04 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 55.
+ 1 APPPATH\Views\sys\approved_loans\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:20 --> Undefined array key "ItemCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 56.
+ 1 APPPATH\Views\sys\approved_loans\view.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:20 --> Undefined array key "ItemCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 56.
+ 1 APPPATH\Views\sys\approved_loans\view.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:20 --> Undefined array key "ItemCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 56.
+ 1 APPPATH\Views\sys\approved_loans\view.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:20 --> Undefined array key "ItemCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 56.
+ 1 APPPATH\Views\sys\approved_loans\view.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:20 --> Undefined array key "ItemCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 56.
+ 1 APPPATH\Views\sys\approved_loans\view.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:18:20 --> Undefined array key "ItemCode"
+in APPPATH\Views\sys\approved_loans\view.php on line 56.
+ 1 APPPATH\Views\sys\approved_loans\view.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\approved_loans\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/approved_loans/view', [], true)
+ 5 APPPATH\Controllers\Approvedloans.php(32): view('sys/approved_loans/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('assets', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:22:08 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\ApprovedLoansModel.php on line 17.
+ 1 APPPATH\Controllers\Approvedloans.php(27): App\Models\ApprovedLoansModel->getLoanStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:27:27 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\ApprovedLoansModel.php on line 17.
+ 1 APPPATH\Controllers\Approvedloans.php(26): App\Models\ApprovedLoansModel->getLoanStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:34:02 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\ApprovedLoansModel.php on line 17.
+ 1 APPPATH\Controllers\Approvedloans.php(26): App\Models\ApprovedLoansModel->getLoanStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:34:03 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\ApprovedLoansModel.php on line 17.
+ 1 APPPATH\Controllers\Approvedloans.php(26): App\Models\ApprovedLoansModel->getLoanStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:34:04 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\ApprovedLoansModel.php on line 17.
+ 1 APPPATH\Controllers\Approvedloans.php(26): App\Models\ApprovedLoansModel->getLoanStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:34:13 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\ApprovedLoansModel.php on line 17.
+ 1 APPPATH\Controllers\Approvedloans.php(26): App\Models\ApprovedLoansModel->getLoanStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:36:06 --> Call to undefined method App\Models\ApprovedLoansModel::getResultArray
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Approvedloans.php(26): CodeIgniter\Model->__call('getResultArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:46:48 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\ApprovedLoansModel.php on line 17.
+ 1 APPPATH\Controllers\Approvedloans.php(26): App\Models\ApprovedLoansModel->getLoanStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:48:12 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\ApprovedLoansModel.php on line 17.
+ 1 APPPATH\Controllers\Approvedloans.php(26): App\Models\ApprovedLoansModel->getLoanStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:48:14 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\ApprovedLoansModel.php on line 17.
+ 1 APPPATH\Controllers\Approvedloans.php(26): App\Models\ApprovedLoansModel->getLoanStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:48:15 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\ApprovedLoansModel.php on line 17.
+ 1 APPPATH\Controllers\Approvedloans.php(26): App\Models\ApprovedLoansModel->getLoanStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 12:57:10 --> Array to string conversion
+in APPPATH\Controllers\Approvedloans.php on line 28.
+ 1 APPPATH\Controllers\Approvedloans.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Approvedloans.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Approvedloans->view('1551')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Approvedloans))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 15:00:34 --> Class "App\Controllers\UserAccountModel" not found
+in APPPATH\Controllers\Useraccount.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 18:51:25 --> Undefined variable $employee_list
+in APPPATH\Views\sys\agent\add.php on line 26.
+ 1 APPPATH\Views\sys\agent\add.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\add.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/add', [], true)
+ 5 APPPATH\Controllers\Agent.php(49): view('sys/agent/add', [])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 18:52:17 --> Class "App\Controllers\ItemModel" not found
+in APPPATH\Controllers\Agent.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 18:52:54 --> Undefined variable $employee_list
+in APPPATH\Views\sys\agent\add.php on line 26.
+ 1 APPPATH\Views\sys\agent\add.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\add.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/add', [], true)
+ 5 APPPATH\Controllers\Agent.php(52): view('sys/agent/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 18:56:12 --> Undefined variable $employee_list
+in APPPATH\Views\sys\agent\add.php on line 26.
+ 1 APPPATH\Views\sys\agent\add.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\add.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/add', [], true)
+ 5 APPPATH\Controllers\Agent.php(52): view('sys/agent/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 18:57:19 --> Undefined variable $employee_list
+in APPPATH\Views\sys\agent\add.php on line 26.
+ 1 APPPATH\Views\sys\agent\add.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\add.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/add', [], true)
+ 5 APPPATH\Controllers\Agent.php(52): view('sys/agent/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 18:59:05 --> Undefined variable $employee_list
+in APPPATH\Views\sys\agent\add.php on line 26.
+ 1 APPPATH\Views\sys\agent\add.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\add.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/add', [], true)
+ 5 APPPATH\Controllers\Agent.php(52): view('sys/agent/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

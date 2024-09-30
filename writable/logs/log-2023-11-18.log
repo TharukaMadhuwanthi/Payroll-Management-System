@@ -1,0 +1,363 @@
+CRITICAL - 2023-11-18 01:29:01 --> Undefined array key "Guarantor1"
+in APPPATH\Views\sys\loan_request\add.php on line 126.
+ 1 APPPATH\Views\sys\loan_request\add.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Guarantor1"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php', 126)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/add', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(64): view('sys/loan_request/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 01:42:24 --> Undefined array key "Guarantor1"
+in APPPATH\Views\sys\loan_request\add.php on line 126.
+ 1 APPPATH\Views\sys\loan_request\add.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Guarantor1"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php', 126)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/add', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(64): view('sys/loan_request/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 02:00:30 --> Undefined array key "ItemName"
+in APPPATH\Views\sys\loan_master\view.php on line 50.
+ 1 APPPATH\Views\sys\loan_master\view.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\view.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/view', [], true)
+ 5 APPPATH\Controllers\LoanMaster.php(61): view('sys/loan_master/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoanMaster->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 02:08:19 --> Class "App\Controllers\LoanMasterModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 02:35:49 --> Undefined array key "LoanId"
+in APPPATH\Views\sys\loan_request\add.php on line 100.
+ 1 APPPATH\Views\sys\loan_request\add.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "LoanId"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/add', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(61): view('sys/loan_request/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 02:36:15 --> Undefined array key "LoanId"
+in APPPATH\Views\sys\loan_request\add.php on line 100.
+ 1 APPPATH\Views\sys\loan_request\add.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "LoanId"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/add', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(61): view('sys/loan_request/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 02:48:20 --> Undefined array key "LoanId"
+in APPPATH\Views\sys\loan_request\view.php on line 49.
+ 1 APPPATH\Views\sys\loan_request\view.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "LoanId"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 49)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(68): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 03:20:10 --> Undefined array key "Date"
+in APPPATH\Views\sys\loan_request\view.php on line 54.
+ 1 APPPATH\Views\sys\loan_request\view.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Date"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(68): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 03:21:31 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\loan_request\view.php on line 55.
+ 1 APPPATH\Views\sys\loan_request\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(68): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 03:22:14 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\loan_request\view.php on line 55.
+ 1 APPPATH\Views\sys\loan_request\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(68): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 03:24:27 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\loan_request\view.php on line 55.
+ 1 APPPATH\Views\sys\loan_request\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(70): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 03:24:29 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\loan_request\view.php on line 55.
+ 1 APPPATH\Views\sys\loan_request\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(70): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 03:25:53 --> Undefined array key "Year"
+in APPPATH\Views\sys\loan_request\view.php on line 52.
+ 1 APPPATH\Views\sys\loan_request\view.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Year"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(72): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 03:27:38 --> Undefined array key "Year"
+in APPPATH\Views\sys\loan_request\view.php on line 52.
+ 1 APPPATH\Views\sys\loan_request\view.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Year"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(72): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 03:27:40 --> Undefined array key "Year"
+in APPPATH\Views\sys\loan_request\view.php on line 52.
+ 1 APPPATH\Views\sys\loan_request\view.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Year"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(72): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 03:29:26 --> Undefined array key "Year"
+in APPPATH\Views\sys\loan_request\view.php on line 52.
+ 1 APPPATH\Views\sys\loan_request\view.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Year"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(72): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 03:39:28 --> Undefined array key "Year"
+in APPPATH\Views\sys\loan_request\view.php on line 52.
+ 1 APPPATH\Views\sys\loan_request\view.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Year"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_request\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_request/view', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(72): view('sys/loan_request/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-18 03:43:18 --> Call to undefined method App\Models\LoanMasterModel::getLoanRequest
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Loanrequest.php(67): CodeIgniter\Model->__call('getLoanRequest', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-18 03:44:27 --> mysqli_sql_exception: Unknown column 'l.EmployeeCode' in 'on clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-18 03:44:27 --> Unknown column 'l.EmployeeCode' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.EmployeeCode=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.EmployeeCode=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.EmployeeCode=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.EmployeeCode=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode')
+ 5 APPPATH\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-18 03:45:22 --> mysqli_sql_exception: Unknown column 'l.ItemCode' in 'on clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-18 03:45:22 --> Unknown column 'l.ItemCode' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode')
+ 5 APPPATH\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-18 03:45:23 --> mysqli_sql_exception: Unknown column 'l.ItemCode' in 'on clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-18 03:45:23 --> Unknown column 'l.ItemCode' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_request` l LEFT JOIN employee e ON l.Employee=e.EmployeeCode LEFT JOIN item i ON i.ItemCode=l.ItemCode')
+ 5 APPPATH\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-18 11:10:24 --> mysqli_sql_exception: Unknown column 'l.ItemCode' in 'on clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-18 11:10:24 --> Unknown column 'l.ItemCode' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.ItemCode=i.ItemCode GROUP BY l.ItemCode,l.Employee;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.ItemCode=i.ItemCode GROUP BY l.ItemCode,l.Employee;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.ItemCode=i.ItemCode GROUP BY l.ItemCode,l.Employee;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.ItemCode=i.ItemCode GROUP BY l.ItemCode,l.Employee;')
+ 5 APPPATH\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-18 11:10:59 --> mysqli_sql_exception: Unknown column 'l.ItemCode' in 'group statement' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-18 11:10:59 --> Unknown column 'l.ItemCode' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.LoanType=i.ItemCode GROUP BY l.ItemCode,l.LoanType;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.LoanType=i.ItemCode GROUP BY l.ItemCode,l.LoanType;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.LoanType=i.ItemCode GROUP BY l.ItemCode,l.LoanType;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.LoanType=i.ItemCode GROUP BY l.ItemCode,l.LoanType;')
+ 5 APPPATH\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-18 11:11:03 --> mysqli_sql_exception: Unknown column 'l.ItemCode' in 'group statement' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-18 11:11:03 --> Unknown column 'l.ItemCode' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.LoanType=i.ItemCode GROUP BY l.ItemCode,l.LoanType;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.LoanType=i.ItemCode GROUP BY l.ItemCode,l.LoanType;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.LoanType=i.ItemCode GROUP BY l.ItemCode,l.LoanType;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `loan_request` l INNER JOIN employee e ON l.Employee=e.EmployeeCode INNER JOIN item i ON l.LoanType=i.ItemCode GROUP BY l.ItemCode,l.LoanType;')
+ 5 APPPATH\Models\LoanRequestModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Loanrequest.php(67): App\Models\LoanRequestModel->getLoanRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

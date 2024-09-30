@@ -1,0 +1,42 @@
+CRITICAL - 2024-03-13 04:50:00 --> Class "App\Controllers\UserAccountModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-13 04:50:52 --> Class "App\Controllers\UserAccountModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-13 04:50:54 --> Class "App\Controllers\UserAccountModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-13 04:51:04 --> Class "App\Controllers\UserAccountModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-13 08:01:09 --> Undefined variable $user_type
+in APPPATH\Controllers\Useraccount.php on line 224.
+ 1 APPPATH\Controllers\Useraccount.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_type', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\Useraccount.php', 224)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-13 08:03:14 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\user_account\view.php on line 58.
+ 1 APPPATH\Views\sys\user_account\view.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\view.php', 58)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/view', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(227): view('sys/user_account/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,33 @@
+CRITICAL - 2023-09-10 08:30:23 --> Undefined variable $designation_list
+in APPPATH\Views\sys\employee\add.php on line 93.
+ 1 APPPATH\Views\sys\employee\add.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $designation_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\add.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/add', [], true)
+ 5 APPPATH\Controllers\Employee.php(51): view('sys/employee/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-10 09:51:05 --> Undefined array key "PlaceName"
+in APPPATH\Views\sys\employee\add.php on line 104.
+ 1 APPPATH\Views\sys\employee\add.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PlaceName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\add.php', 104)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/add', [], true)
+ 5 APPPATH\Controllers\Employee.php(58): view('sys/employee/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-10 09:52:52 --> Undefined array key "PlaceName"
+in APPPATH\Views\sys\employee\add.php on line 104.
+ 1 APPPATH\Views\sys\employee\add.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PlaceName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\add.php', 104)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/add', [], true)
+ 5 APPPATH\Controllers\Employee.php(58): view('sys/employee/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

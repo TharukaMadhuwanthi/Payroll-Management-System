@@ -1,0 +1,673 @@
+CRITICAL - 2024-02-10 04:44:59 --> Unclosed '{' on line 81
+in APPPATH\Views\sys\payroll\payslip.php on line 104.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 3 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 04:46:43 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\payroll\payslip.php on line 86.
+ 1 APPPATH\Views\sys\payroll\payslip.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 05:14:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND Year='20...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Employe...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Employe...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Employe...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Employe...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 05:14:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND Year='20...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 05:16:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND m.Year='...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Employe...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Employe...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Employe...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Employe...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 05:16:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND m.Year='...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 05:16:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND m.Year='...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Employe...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Employe...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Employe...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Employe...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 05:16:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND m.Year='...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 05:17:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND m.Year='...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Employe...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Employe...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Employe...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Employe...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 05:17:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND m.Year='...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 05:18:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND m.Year='...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Employe...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Employe...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Employe...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Employe...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 05:18:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND m.Year='...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 05:18:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND m.Year='...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Employe...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Employe...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Employe...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Employe...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 05:18:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1551' AND m.Year='...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1551\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 05:19:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1' AND m.Year='202...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT Employe...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT Employe...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT Employe...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT Employe...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 05:19:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode='1' AND m.Year='202...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT EmployeeCode,ItemCode,Amount FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE INNER JOIN item i ON m.ItemCode=i.ItemCode m.EmployeeCode=\'1\' AND m.Year=\'2020\' AND m.Month=\'02\' GROUP BY ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(28): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 05:19:50 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\payroll\payslip.php on line 86.
+ 1 APPPATH\Views\sys\payroll\payslip.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 05:25:50 --> mysqli_sql_exception: Column 'EmployeeCode' in where clause is ambiguous in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT e.*,i.*...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT e.*,i.*...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT e.*,i.*...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT e.*,i.*...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 05:25:50 --> Column 'EmployeeCode' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 05:26:52 --> mysqli_sql_exception: Column 'ItemCode' in group statement is ambiguous in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT e.*,i.*...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT e.*,i.*...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT e.*,i.*...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT e.*,i.*...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 05:26:52 --> Column 'ItemCode' in group statement is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 06:43:07 --> Undefined array key "Month"
+in APPPATH\Views\sys\payroll\payslip.php on line 83.
+ 1 APPPATH\Views\sys\payroll\payslip.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Month"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 83)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 06:48:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'm.Month as mMonth FROM `month_process` m INNER JOIN employee e ON m.EmployeeC...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT e.*,i.*...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT e.*,i.*...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT e.*,i.*...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT e.*,i.*...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 06:48:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'm.Month as mMonth FROM `month_process` m INNER JOIN employee e ON m.EmployeeC...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT e.*,i.*,m.*,m.Year as mYear m.Month as mMonth FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT e.*,i.*,m.*,m.Year as mYear m.Month as mMonth FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT e.*,i.*,m.*,m.Year as mYear m.Month as mMonth FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT e.*,i.*,m.*,m.Year as mYear m.Month as mMonth FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 06:49:21 --> Undefined array key "mMonth"
+in APPPATH\Views\sys\payroll\payslip.php on line 83.
+ 1 APPPATH\Views\sys\payroll\payslip.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mMonth"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 83)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 06:50:36 --> Undefined array key "mMonth"
+in APPPATH\Views\sys\payroll\payslip.php on line 83.
+ 1 APPPATH\Views\sys\payroll\payslip.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mMonth"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 83)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 08:55:32 --> mysqli_sql_exception: Column 'EmployeeCode' in where clause is ambiguous in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT e.*,i.*...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT e.*,i.*...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT e.*,i.*...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT e.*,i.*...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 08:55:32 --> Column 'EmployeeCode' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT e.*,i.*,m.*,m.Year as mYear, m.Month as mMonth FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT e.*,i.*,m.*,m.Year as mYear, m.Month as mMonth FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT e.*,i.*,m.*,m.Year as mYear, m.Month as mMonth FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT e.*,i.*,m.*,m.Year as mYear, m.Month as mMonth FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode WHERE EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 10:20:26 --> Undefined variable $Month
+in APPPATH\Views\sys\payroll\payslip.php on line 87.
+ 1 APPPATH\Views\sys\payroll\payslip.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Month', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 87)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 10:21:59 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH\Views\sys\payroll\payslip.php on line 87.
+ 1 APPPATH\Views\sys\payroll\payslip.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 87)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 10:23:05 --> Undefined array key "Month"
+in APPPATH\Views\sys\payroll\payslip.php on line 87.
+ 1 APPPATH\Views\sys\payroll\payslip.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Month"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 87)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 10:24:08 --> Undefined array key "mMonth"
+in APPPATH\Views\sys\payroll\payslip.php on line 87.
+ 1 APPPATH\Views\sys\payroll\payslip.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mMonth"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 87)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 10:31:27 --> Undefined array key "mMonth"
+in APPPATH\Views\sys\payroll\payslip.php on line 87.
+ 1 APPPATH\Views\sys\payroll\payslip.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mMonth"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 87)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 10:57:02 --> Undefined array key "mMonth"
+in APPPATH\Views\sys\payroll\payslip.php on line 87.
+ 1 APPPATH\Views\sys\payroll\payslip.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mMonth"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 87)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 11:01:52 --> Undefined array key "mMonth"
+in APPPATH\Views\sys\payroll\payslip.php on line 87.
+ 1 APPPATH\Views\sys\payroll\payslip.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mMonth"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 87)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 11:28:26 --> Undefined array key "mMonth"
+in APPPATH\Views\sys\payroll\payslip.php on line 87.
+ 1 APPPATH\Views\sys\payroll\payslip.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mMonth"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 87)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(340): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 11:40:03 --> Undefined array key "mMonth"
+in APPPATH\Views\sys\payroll\payslip.php on line 87.
+ 1 APPPATH\Views\sys\payroll\payslip.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mMonth"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 87)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(340): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 11:40:14 --> Undefined array key "Amount"
+in APPPATH\Views\sys\payroll\payslip.php on line 96.
+ 1 APPPATH\Views\sys\payroll\payslip.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 96)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(340): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 11:41:14 --> Undefined array key "Amount"
+in APPPATH\Views\sys\payroll\payslip.php on line 96.
+ 1 APPPATH\Views\sys\payroll\payslip.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 96)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(340): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 16:50:20 --> mysqli_sql_exception: Unknown column 'd.Designation' in 'on clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT e.*,i.*...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT e.*,i.*...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT e.*,i.*...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT e.*,i.*...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 16:50:21 --> Unknown column 'd.Designation' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode INNER JOIN designation d ON d.Designation=e.Designation WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode INNER JOIN designation d ON d.Designation=e.Designation WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode INNER JOIN designation d ON d.Designation=e.Designation WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode INNER JOIN item i ON i.ItemCode=m.ItemCode INNER JOIN designation d ON d.Designation=e.Designation WHERE m.EmployeeCode=\'1\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 16:54:43 --> mysqli_sql_exception: Unknown table 'pms.i' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT e.*,i.*...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT e.*,i.*...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT e.*,i.*...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT e.*,i.*...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 16:54:43 --> Unknown table 'pms.i'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(334): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 17:21:38 --> Undefined variable $emp
+in APPPATH\Views\sys\payroll\payslip.php on line 84.
+ 1 APPPATH\Views\sys\payroll\payslip.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emp', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 17:23:11 --> Undefined variable $emp
+in APPPATH\Views\sys\payroll\payslip.php on line 84.
+ 1 APPPATH\Views\sys\payroll\payslip.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emp', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(342): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 17:25:36 --> Undefined variable $emp
+in APPPATH\Views\sys\payroll\payslip.php on line 84.
+ 1 APPPATH\Views\sys\payroll\payslip.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emp', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(344): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 17:29:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'd.* w.* FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesId I...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT e.* d.*...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT e.* d.*...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT e.* d.*...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT e.* d.*...')
+#4 C:\xampp\htdocs\pms\app\Models\EmployeeModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(333): App\Models\EmployeeModel->getEmployee('1551')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 17:29:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'd.* w.* FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesId I...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT e.* d.* w.* FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesId INNER JOIN work_place w ON w.PlaceId=e.WorkPlace WHERE e.EmployeeCode=\'1551\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT e.* d.* w.* FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesId INNER JOIN work_place w ON w.PlaceId=e.WorkPlace WHERE e.EmployeeCode=\'1551\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT e.* d.* w.* FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesId INNER JOIN work_place w ON w.PlaceId=e.WorkPlace WHERE e.EmployeeCode=\'1551\' ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT e.* d.* w.* FROM `employee` e INNER JOIN designation d ON e.Designation=d.DesId INNER JOIN work_place w ON w.PlaceId=e.WorkPlace WHERE e.EmployeeCode=\'1551\' ')
+ 5 APPPATH\Models\EmployeeModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(333): App\Models\EmployeeModel->getEmployee('1551')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 17:29:49 --> mysqli_sql_exception: Unknown table 'pms.i' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT e.*,i.*...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT e.*,i.*...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT e.*,i.*...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT e.*,i.*...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(336): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 17:29:49 --> Unknown table 'pms.i'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT e.*,i.*,m.* FROM `month_process` m INNER JOIN employee e ON m.EmployeeCode=e.EmployeeCode WHERE m.EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'02\' GROUP BY m.ItemCode')
+ 5 APPPATH\Models\PayrollModel.php(34): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(336): App\Models\PayrollModel->getPaySlip('1551', '2020', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 17:52:49 --> syntax error, unexpected variable "$result", expecting "," or ";"
+in APPPATH\Views\sys\payroll\payslip.php on line 98.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 3 APPPATH\Controllers\Payroll.php(347): view('sys/payroll/payslip', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 17:54:08 --> Undefined array key "ItemName"
+in APPPATH\Views\sys\payroll\payslip.php on line 98.
+ 1 APPPATH\Views\sys\payroll\payslip.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 98)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(347): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

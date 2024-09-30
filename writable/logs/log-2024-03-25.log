@@ -1,0 +1,22 @@
+CRITICAL - 2024-03-25 17:00:39 --> Undefined array key 0
+in APPPATH\Views\sys\payroll\salary_analysis.php on line 123.
+ 1 APPPATH\Views\sys\payroll\salary_analysis.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\salary_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/salary_analysis', [], true)
+ 5 APPPATH\Controllers\Payroll.php(484): view('sys/payroll/salary_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->salary_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-25 17:16:29 --> Undefined array key "EmployeeCode"
+in APPPATH\Views\sys\employee\view.php on line 69.
+ 1 APPPATH\Views\sys\employee\view.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "EmployeeCode"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\view.php', 69)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/view', [], true)
+ 5 APPPATH\Controllers\Employee.php(112): view('sys/employee/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,9 @@
+CRITICAL - 2023-08-22 16:08:25 --> Class "app\Controllers\BaseController" not found
+in APPPATH\Controllers\Sys.php on line 4.
+ 1 SYSTEMPATH\Router\AutoRouter.php(161): include_once()
+ 2 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/sys', 'get')
+ 3 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/sys')
+ 4 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/sys')
+ 5 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

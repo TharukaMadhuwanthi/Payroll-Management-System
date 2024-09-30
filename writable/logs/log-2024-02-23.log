@@ -1,0 +1,135 @@
+CRITICAL - 2024-02-23 12:08:28 --> Undefined variable $employee_list
+in APPPATH\Views\sys\user_account\add.php on line 22.
+ 1 APPPATH\Views\sys\user_account\add.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\add.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/add', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(45): view('sys/user_account/add', [])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-23 15:16:52 --> mysqli_sql_exception: Unknown column 'Designation' in 'field list' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pms\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\pms\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\pms\app\Controllers\Useraccount.php(36): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Useraccount->add()
+#10 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+#11 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-23 15:16:52 --> Unknown column 'Designation' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `user_account` (`Name`, `Email`, `Designation`, `Username`, `Password`) VALUES (\'Admin\', \'sumithra@gmail.com\', NULL, \'Sumithra\', \'1011121314\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_account` (`Name`, `Email`, `Designation`, `Username`, `Password`) VALUES (\'Admin\', \'sumithra@gmail.com\', NULL, \'Sumithra\', \'1011121314\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_account` (`Name`, `Email`, `Designation`, `Username`, `Password`) VALUES (\'Admin\', \'sumithra@gmail.com\', NULL, \'Sumithra\', \'1011121314\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_account` (`Name`, `Email`, `Designation`, `Username`, `Password`) VALUES (:Name:, :Email:, :Designation:, :Username:, :Password:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Useraccount.php(36): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->add()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-23 16:59:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`month_process' at line 3 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nINSERT INTO `m...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nINSERT INTO `m...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nINSERT INTO `m...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nINSERT INTO `m...')
+#4 C:\xampp\htdocs\pms\app\Models\MonthendModel.php(16): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(324): App\Models\MonthendModel->processMonthend()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-23 16:59:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`month_process' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+INSERT INTO `month_end` 
+SELECT *
+FROM `month_process
+', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+INSERT INTO `month_end` 
+SELECT *
+FROM `month_process
+')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+INSERT INTO `month_end` 
+SELECT *
+FROM `month_process
+')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+INSERT INTO `month_end` 
+SELECT *
+FROM `month_process
+')
+ 5 APPPATH\Models\MonthendModel.php(16): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(324): App\Models\MonthendModel->processMonthend()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 17:05:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\MonthendModel.php on line 16.
+ 1 APPPATH\Controllers\Payroll.php(324): App\Models\MonthendModel->processMonthend()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 17:05:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\MonthendModel.php on line 16.
+ 1 APPPATH\Controllers\Payroll.php(324): App\Models\MonthendModel->processMonthend()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 17:06:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\MonthendModel.php on line 16.
+ 1 APPPATH\Controllers\Payroll.php(324): App\Models\MonthendModel->processMonthend()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 17:08:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+in APPPATH\Models\MonthendModel.php on line 17.
+ 1 APPPATH\Controllers\Payroll.php(324): App\Models\MonthendModel->processMonthend()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 17:08:42 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+in APPPATH\Models\MonthendModel.php on line 17.
+ 1 APPPATH\Controllers\Payroll.php(324): App\Models\MonthendModel->processMonthend()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 17:11:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+in APPPATH\Models\MonthendModel.php on line 17.
+ 1 APPPATH\Controllers\Payroll.php(324): App\Models\MonthendModel->processMonthend()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 17:13:29 --> current(): Argument #1 ($array) must be of type array, string given
+in SYSTEMPATH\Database\BaseBuilder.php on line 1834.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1834): current('month_process')
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2189): CodeIgniter\Database\BaseBuilder->setData('month_process', null)
+ 3 APPPATH\Models\MonthendModel.php(19): CodeIgniter\Database\BaseBuilder->insertBatch('month_process')
+ 4 APPPATH\Controllers\Payroll.php(324): App\Models\MonthendModel->processMonthend()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_end()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

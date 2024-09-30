@@ -1,0 +1,125 @@
+CRITICAL - 2024-03-08 05:51:47 --> Invalid file: "sys/user_accont/reset_password.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/user_accont/reset_password.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_accont/reset_password', [], true)
+ 3 APPPATH\Controllers\User.php(61): view('sys/user_accont/reset_password')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->resetpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-08 08:28:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode...' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT ItemCod...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT ItemCod...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT ItemCod...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT ItemCod...')
+#4 C:\xampp\htdocs\pms\app\Models\MonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(350): App\Models\MonthProcessModel->getMonthSummary('2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-08 08:28:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT ItemCode,ItemName Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'01\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT ItemCode,ItemName Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'01\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT ItemCode,ItemName Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'01\';')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT ItemCode,ItemName Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'01\';')
+ 5 APPPATH\Models\MonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(350): App\Models\MonthProcessModel->getMonthSummary('2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-08 08:30:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE Year='2024' Month='01'' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT ItemCod...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT ItemCod...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT ItemCod...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT ItemCod...')
+#4 C:\xampp\htdocs\pms\app\Models\MonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(350): App\Models\MonthProcessModel->getMonthSummary('2024', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-08 08:30:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE Year='2024' Month='01'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'01\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'01\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'01\';')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'01\';')
+ 5 APPPATH\Models\MonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(350): App\Models\MonthProcessModel->getMonthSummary('2024', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-08 08:30:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE Year='2024' Month='02'' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT ItemCod...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT ItemCod...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT ItemCod...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT ItemCod...')
+#4 C:\xampp\htdocs\pms\app\Models\MonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(350): App\Models\MonthProcessModel->getMonthSummary('2024', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-08 08:30:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE Year='2024' Month='02'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'02\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'02\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'02\';')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' Month=\'02\';')
+ 5 APPPATH\Models\MonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(350): App\Models\MonthProcessModel->getMonthSummary('2024', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-08 08:35:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE Year='2024' AND Month='02'' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT ItemCod...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT ItemCod...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT ItemCod...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT ItemCod...')
+#4 C:\xampp\htdocs\pms\app\Models\MonthProcessModel.php(14): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(350): App\Models\MonthProcessModel->getMonthSummary('2024', '02')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-08 08:35:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE Year='2024' AND Month='02'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' AND Month=\'02\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' AND Month=\'02\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' AND Month=\'02\';')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT ItemCode,ItemName,Sum(Amount) FROM `month_process` m INNER JOIN item i ON m.ItemCode=i.ItemCode GROUP BY m.ItemCode WHERE Year=\'2024\' AND Month=\'02\';')
+ 5 APPPATH\Models\MonthProcessModel.php(14): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(350): App\Models\MonthProcessModel->getMonthSummary('2024', '02')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->month_process()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

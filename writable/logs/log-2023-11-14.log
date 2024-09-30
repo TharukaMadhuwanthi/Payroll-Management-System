@@ -1,0 +1,22 @@
+CRITICAL - 2023-11-14 18:06:16 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\loan\view.php on line 52.
+ 1 APPPATH\Views\sys\loan\view.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan/view', [], true)
+ 5 APPPATH\Controllers\Loan.php(61): view('sys/loan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loan->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 18:06:33 --> Undefined variable $employee_list
+in APPPATH\Views\sys\loan\add.php on line 28.
+ 1 APPPATH\Views\sys\loan\add.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\add.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan/add', [], true)
+ 5 APPPATH\Controllers\Loan.php(50): view('sys/loan/add', [])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loan->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

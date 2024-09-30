@@ -1,0 +1,10 @@
+CRITICAL - 2024-01-14 05:50:28 --> Call to undefined function form_open_multipart()
+in APPPATH\Views\web\register.php on line 16.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/register', [], true)
+ 4 APPPATH\Controllers\Web.php(10): view('web/register')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

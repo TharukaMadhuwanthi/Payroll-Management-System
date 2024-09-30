@@ -1,0 +1,51 @@
+CRITICAL - 2023-12-23 08:10:48 --> Call to undefined method App\Models\LoanRequestModel::getGrantLoanDetails
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Loanrequest.php(91): CodeIgniter\Model->__call('getGrantLoanDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', '15')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-23 09:34:53 --> Undefined array key "Amount"
+in APPPATH\Views\sys\loan_types\view.php on line 57.
+ 1 APPPATH\Views\sys\loan_types\view.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_types\\view.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_types\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_types/view', [], true)
+ 5 APPPATH\Controllers\Loantypes.php(60): view('sys/loan_types/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loantypes->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loantypes))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-23 10:05:33 --> Undefined array key "MonthlyInstallment"
+in APPPATH\Views\sys\loan_master\grantview.php on line 59.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "MonthlyInstallment"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(95): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', '15')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-23 10:05:54 --> Undefined array key "MonthlyInstallments"
+in APPPATH\Views\sys\loan_master\grantview.php on line 59.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "MonthlyInstallments"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(95): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', '15')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-23 10:05:57 --> Undefined array key "MonthlyInstallments"
+in APPPATH\Views\sys\loan_master\grantview.php on line 59.
+ 1 APPPATH\Views\sys\loan_master\grantview.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "MonthlyInstallments"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan_master\\grantview.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan_master/grantview', [], true)
+ 5 APPPATH\Controllers\Loanrequest.php(95): view('sys/loan_master/grantview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->grantview('923', '15')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

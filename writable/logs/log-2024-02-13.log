@@ -1,0 +1,170 @@
+CRITICAL - 2024-02-13 10:53:31 --> Too few arguments to function App\Models\PayrollModel::ViewAdditions(), 0 passed in C:\xampp\htdocs\pms\app\Controllers\Payroll.php on line 343 and exactly 3 expected
+in APPPATH\Models\PayrollModel.php on line 40.
+ 1 APPPATH\Controllers\Payroll.php(343): App\Models\PayrollModel->ViewAdditions()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 10:57:14 --> Too few arguments to function App\Models\PayrollModel::ViewAdditions(), 1 passed in C:\xampp\htdocs\pms\app\Controllers\Payroll.php on line 343 and exactly 3 expected
+in APPPATH\Models\PayrollModel.php on line 40.
+ 1 APPPATH\Controllers\Payroll.php(343): App\Models\PayrollModel->ViewAdditions([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 10:57:34 --> Too few arguments to function App\Models\PayrollModel::ViewAdditions(), 1 passed in C:\xampp\htdocs\pms\app\Controllers\Payroll.php on line 343 and exactly 3 expected
+in APPPATH\Models\PayrollModel.php on line 40.
+ 1 APPPATH\Controllers\Payroll.php(343): App\Models\PayrollModel->ViewAdditions([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 11:00:18 --> Undefined array key "ItemName"
+in APPPATH\Views\sys\payroll\payslip.php on line 107.
+ 1 APPPATH\Views\sys\payroll\payslip.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ItemName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 107)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(351): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 11:22:13 --> Unclosed '{' on line 79
+in APPPATH\Views\sys\payroll\payslip.php on line 131.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 3 APPPATH\Controllers\Payroll.php(351): view('sys/payroll/payslip', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 11:50:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '='1551' AND Year='2020' AND Month='01' GROUP BY EmployeeCode' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(41): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(343): App\Models\PayrollModel->ViewAdditions('1551', '2020', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-13 11:50:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '='1551' AND Year='2020' AND Month='01' GROUP BY EmployeeCode' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `month_process` EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `month_process` EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `month_process` EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `month_process` EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode')
+ 5 APPPATH\Models\PayrollModel.php(41): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(343): App\Models\PayrollModel->ViewAdditions('1551', '2020', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 11:59:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'EmployeeCode='1551' AND Year='2020' AND Month='01' GROUP BY EmployeeCode' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(41): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(343): App\Models\PayrollModel->ViewAdditions('1551', '2020', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-13 11:59:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'EmployeeCode='1551' AND Year='2020' AND Month='01' GROUP BY EmployeeCode' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `month_process`  WHERE ItemCode BETWEEN 100 AND 199 EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `month_process`  WHERE ItemCode BETWEEN 100 AND 199 EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `month_process`  WHERE ItemCode BETWEEN 100 AND 199 EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `month_process`  WHERE ItemCode BETWEEN 100 AND 199 EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode')
+ 5 APPPATH\Models\PayrollModel.php(41): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(343): App\Models\PayrollModel->ViewAdditions('1551', '2020', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 11:59:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'EmployeeCode='1551' AND Year='2020' AND Month='01' GROUP BY EmployeeCode' at line 1 in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\PayrollModel.php(41): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Payroll.php(343): App\Models\PayrollModel->ViewAdditions('1551', '2020', '01')
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-13 11:59:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'EmployeeCode='1551' AND Year='2020' AND Month='01' GROUP BY EmployeeCode' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `month_process`  WHERE ItemCode BETWEEN 100 AND 199 EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `month_process`  WHERE ItemCode BETWEEN 100 AND 199 EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `month_process`  WHERE ItemCode BETWEEN 100 AND 199 EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `month_process`  WHERE ItemCode BETWEEN 100 AND 199 EmployeeCode=\'1551\' AND Year=\'2020\' AND Month=\'01\' GROUP BY EmployeeCode')
+ 5 APPPATH\Models\PayrollModel.php(41): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Payroll.php(343): App\Models\PayrollModel->ViewAdditions('1551', '2020', '01')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 12:07:52 --> Call to a member function first() on array
+in APPPATH\Controllers\Payroll.php on line 343.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 13:01:10 --> Too few arguments to function App\Models\PayrollModel::ViewAdditions(), 0 passed in C:\xampp\htdocs\pms\app\Controllers\Payroll.php on line 346 and exactly 3 expected
+in APPPATH\Models\PayrollModel.php on line 46.
+ 1 APPPATH\Controllers\Payroll.php(346): App\Models\PayrollModel->ViewAdditions()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 13:12:14 --> Too few arguments to function App\Models\PayrollModel::ViewAdditions(), 1 passed in C:\xampp\htdocs\pms\app\Controllers\Payroll.php on line 346 and exactly 3 expected
+in APPPATH\Models\PayrollModel.php on line 46.
+ 1 APPPATH\Controllers\Payroll.php(346): App\Models\PayrollModel->ViewAdditions([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 18:23:46 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\payroll\payslip.php on line 122.
+ 1 APPPATH\Views\sys\payroll\payslip.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 122)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(359): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 18:28:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\payroll\payslip.php on line 122.
+ 1 APPPATH\Views\sys\payroll\payslip.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php', 122)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(359): view('sys/payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Payroll->payslip()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

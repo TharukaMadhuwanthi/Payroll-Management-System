@@ -1,0 +1,141 @@
+CRITICAL - 2023-11-04 05:48:38 --> Call to undefined method App\Models\InstructionsModel::getInstructions
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Instructions.php(53): CodeIgniter\Model->__call('getInstructions', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 05:51:44 --> Call to undefined method App\Models\InstructionsModel::getInstructions
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Instructions.php(53): CodeIgniter\Model->__call('getInstructions', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 05:57:50 --> Class "App\Controllers\InstructionsModel" not found
+in APPPATH\Controllers\Instructions.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 05:58:53 --> Call to undefined method App\Models\InstructionsModel::getInstructions
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Instructions.php(52): CodeIgniter\Model->__call('getInstructions', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Instructions->view()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Instructions))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 13:29:52 --> Class "App\Models\LoanModel" not found
+in APPPATH\Controllers\Loan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loan->view()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-04 15:06:27 --> mysqli_sql_exception: Unknown column 'AmountInstallment' in 'field list' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pms\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\pms\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\pms\app\Controllers\Loan.php(34): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Loan->add()
+#10 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#11 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-04 15:06:27 --> Unknown column 'AmountInstallment' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `loan` (`LoanId`, `EmployeeCode`, `LoanType`, `Amount`, `Interest`, `NumInstallments`, `AmountInstallment`, `Status`) VALUES (\'22\', \'205\', \'FestivalAdvance\', \'10000\', \'0\', \'8\', \'1250\', \'Active\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `loan` (`LoanId`, `EmployeeCode`, `LoanType`, `Amount`, `Interest`, `NumInstallments`, `AmountInstallment`, `Status`) VALUES (\'22\', \'205\', \'FestivalAdvance\', \'10000\', \'0\', \'8\', \'1250\', \'Active\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `loan` (`LoanId`, `EmployeeCode`, `LoanType`, `Amount`, `Interest`, `NumInstallments`, `AmountInstallment`, `Status`) VALUES (\'22\', \'205\', \'FestivalAdvance\', \'10000\', \'0\', \'8\', \'1250\', \'Active\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `loan` (`LoanId`, `EmployeeCode`, `LoanType`, `Amount`, `Interest`, `NumInstallments`, `AmountInstallment`, `Status`) VALUES (:LoanId:, :EmployeeCode:, :LoanType:, :Amount:, :Interest:, :NumInstallments:, :AmountInstallment:, :Status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Loan.php(34): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loan->add()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 15:09:12 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\loan\view.php on line 51.
+ 1 APPPATH\Views\sys\loan\view.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan/view', [], true)
+ 5 APPPATH\Controllers\Loan.php(61): view('sys/loan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loan->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 15:12:09 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\loan\view.php on line 52.
+ 1 APPPATH\Views\sys\loan\view.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan/view', [], true)
+ 5 APPPATH\Controllers\Loan.php(61): view('sys/loan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loan->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 15:21:39 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\loan\view.php on line 52.
+ 1 APPPATH\Views\sys\loan\view.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan/view', [], true)
+ 5 APPPATH\Controllers\Loan.php(61): view('sys/loan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loan->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 15:24:16 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\loan\view.php on line 52.
+ 1 APPPATH\Views\sys\loan\view.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan/view', [], true)
+ 5 APPPATH\Controllers\Loan.php(61): view('sys/loan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loan->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 15:24:24 --> Undefined variable $employee_list
+in APPPATH\Views\sys\loan\add.php on line 28.
+ 1 APPPATH\Views\sys\loan\add.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\add.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan/add', [], true)
+ 5 APPPATH\Controllers\Loan.php(50): view('sys/loan/add', [])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loan->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 15:24:27 --> Undefined array key "FirstName"
+in APPPATH\Views\sys\loan\view.php on line 52.
+ 1 APPPATH\Views\sys\loan\view.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "FirstName"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan/view', [], true)
+ 5 APPPATH\Controllers\Loan.php(61): view('sys/loan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loan->view()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-04 15:24:28 --> Undefined variable $employee_list
+in APPPATH\Views\sys\loan\add.php on line 28.
+ 1 APPPATH\Views\sys\loan\add.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\add.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\loan\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/loan/add', [], true)
+ 5 APPPATH\Controllers\Loan.php(50): view('sys/loan/add', [])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loan->add()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

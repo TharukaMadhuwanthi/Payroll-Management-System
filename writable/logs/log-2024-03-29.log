@@ -1,0 +1,1696 @@
+ERROR - 2024-03-29 09:03:26 --> mysqli_sql_exception: Unknown column 'a.ItemCode' in 'on clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('\nSELECT * FROM ...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\nSELECT * FROM ...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\nSELECT * FROM ...')
+#3 C:\xampp\htdocs\pms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\nSELECT * FROM ...')
+#4 C:\xampp\htdocs\pms\app\Models\AgentModel.php(18): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pms\app\Controllers\Agent.php(62): App\Models\AgentModel->getAgentDetails()
+#6 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Agent->view()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-29 09:03:26 --> Unknown column 'a.ItemCode' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+SELECT * FROM `agent` a LEFT JOIN item i ON a.ItemCode=i.ItemCode  GROUP BY a.ItemCode;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+SELECT * FROM `agent` a LEFT JOIN item i ON a.ItemCode=i.ItemCode  GROUP BY a.ItemCode;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+SELECT * FROM `agent` a LEFT JOIN item i ON a.ItemCode=i.ItemCode  GROUP BY a.ItemCode;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+SELECT * FROM `agent` a LEFT JOIN item i ON a.ItemCode=i.ItemCode  GROUP BY a.ItemCode;')
+ 5 APPPATH\Models\AgentModel.php(18): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Agent.php(62): App\Models\AgentModel->getAgentDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->view()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 10:20:41 --> Undefined variable $user_type
+in APPPATH\Controllers\SubPayroll.php on line 96.
+ 1 APPPATH\Controllers\SubPayroll.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_type', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\SubPayroll.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Subpayroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Subpayroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 10:21:17 --> Undefined variable $user_type
+in APPPATH\Controllers\SubPayroll.php on line 96.
+ 1 APPPATH\Controllers\SubPayroll.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_type', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\SubPayroll.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Subpayroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Subpayroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 10:21:59 --> Undefined variable $data
+in APPPATH\Controllers\SubPayroll.php on line 99.
+ 1 APPPATH\Controllers\SubPayroll.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\pms\\app\\Controllers\\SubPayroll.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Subpayroll->month_process()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Subpayroll))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:49:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:49:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:49:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:49:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-29 12:50:25 --> mysqli_sql_exception: Not unique table/alias: 'work_place' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Employee.php(191): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->update()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-29 12:50:25 --> Not unique table/alias: 'work_place'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Employee.php(191): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->update()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:51:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:51:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:51:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:51:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-29 12:51:56 --> mysqli_sql_exception: Not unique table/alias: 'work_place' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Employee.php(191): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->update()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-29 12:51:56 --> Not unique table/alias: 'work_place'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Employee.php(191): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->update()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:54:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:54:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:54:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:54:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-29 12:54:25 --> mysqli_sql_exception: Not unique table/alias: 'work_place' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Employee.php(191): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->update()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-29 12:54:25 --> Not unique table/alias: 'work_place'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Employee.php(191): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->update()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:56:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:56:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:56:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:56:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-29 13:36:07 --> mysqli_sql_exception: Unknown column 'ItemCode' in 'where clause' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\pms\app\Controllers\Agent.php(76): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Agent->updatedetails('211')
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-29 13:36:07 --> Unknown column 'ItemCode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `agent`
+WHERE `ItemCode` = \'211\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `agent`
+WHERE `ItemCode` = \'211\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `agent`
+WHERE `ItemCode` = \'211\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `agent`
+WHERE `ItemCode` = :ItemCode:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Agent.php(76): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->updatedetails('211')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 13:36:56 --> Undefined variable $item_list
+in APPPATH\Views\sys\agent\update_details.php on line 26.
+ 1 APPPATH\Views\sys\agent\update_details.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\update_details.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/update_details', [], true)
+ 5 APPPATH\Controllers\Agent.php(80): view('sys/agent/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->updatedetails('211')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 13:36:56 --> Undefined variable $item_list
+in APPPATH\Views\sys\agent\update_details.php on line 26.
+ 1 APPPATH\Views\sys\agent\update_details.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\update_details.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/update_details', [], true)
+ 5 APPPATH\Controllers\Agent.php(80): view('sys/agent/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 13:36:56 --> Undefined variable $item_list
+in APPPATH\Views\sys\agent\update_details.php on line 26.
+ 1 APPPATH\Views\sys\agent\update_details.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\update_details.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/update_details', [], true)
+ 5 APPPATH\Controllers\Agent.php(80): view('sys/agent/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 13:36:56 --> Undefined variable $item_list
+in APPPATH\Views\sys\agent\update_details.php on line 26.
+ 1 APPPATH\Views\sys\agent\update_details.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\update_details.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/update_details', [], true)
+ 5 APPPATH\Controllers\Agent.php(80): view('sys/agent/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 13:36:56 --> Undefined variable $item_list
+in APPPATH\Views\sys\agent\update_details.php on line 26.
+ 1 APPPATH\Views\sys\agent\update_details.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_list', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\update_details.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\agent\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/agent/update_details', [], true)
+ 5 APPPATH\Controllers\Agent.php(80): view('sys/agent/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Agent->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:54:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:54:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:54:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:54:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-29 15:54:40 --> mysqli_sql_exception: Not unique table/alias: 'work_place' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pms\app\Controllers\Employee.php(191): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Employee->update()
+#8 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-29 15:54:40 --> Not unique table/alias: 'work_place'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `work_place`
+LEFT JOIN `work_place` ON `work_place`.`PlaceId`=`employee`.`WorkPlace`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Employee.php(191): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->update()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:57:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:57:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:57:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:57:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:59:42 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:59:42 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:59:42 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 15:59:42 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:01:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:01:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:01:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:01:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:02:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:02:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:02:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:02:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:03:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:03:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:03:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:03:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:03:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:03:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:03:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:03:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:04:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:04:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:04:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:04:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:04:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:04:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:04:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:04:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:09:31 --> Undefined array key "PlaceId"
+in APPPATH\Views\sys\employee\update_details.php on line 25.
+ 1 APPPATH\Views\sys\employee\update_details.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PlaceId"', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('10003')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:09:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:09:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:09:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:09:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:10:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:10:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:10:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:10:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:11:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:11:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:11:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:11:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 23.
+ 1 APPPATH\Views\sys\employee\update_details.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:12:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:12:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:12:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:12:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:12:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:12:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:12:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:12:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:14:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:14:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:14:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:14:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:21:37 --> Class "App\Controllers\ResettokenModel" not found
+in APPPATH\Controllers\Useraccount.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->SendResetLink()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-29 16:25:06 --> mysqli_sql_exception: Unknown column 'user_id' in 'field list' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pms\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\pms\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\pms\app\Controllers\Useraccount.php(159): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Useraccount->SendResetLink()
+#10 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+#11 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-03-29 16:25:06 --> Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `reset_tokens` (`user_id`, `token`, `created_at`) VALUES (\'24\', \'1f625fb557f314fcb63bb8ed8b479c45\', \'2024-03-29 17:25:06\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reset_tokens` (`user_id`, `token`, `created_at`) VALUES (\'24\', \'1f625fb557f314fcb63bb8ed8b479c45\', \'2024-03-29 17:25:06\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reset_tokens` (`user_id`, `token`, `created_at`) VALUES (\'24\', \'1f625fb557f314fcb63bb8ed8b479c45\', \'2024-03-29 17:25:06\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reset_tokens` (`user_id`, `token`, `created_at`) VALUES (:user_id:, :token:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Useraccount.php(159): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->SendResetLink()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-29 16:26:46 --> mysqli_sql_exception: Unknown column 'user_id' in 'field list' in C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pms\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\pms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\pms\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\pms\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pms\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pms\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\pms\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\pms\app\Controllers\Useraccount.php(159): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\pms\system\CodeIgniter.php(932): App\Controllers\Useraccount->SendResetLink()
+#10 C:\xampp\htdocs\pms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+#11 C:\xampp\htdocs\pms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pms\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-03-29 16:26:46 --> Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `reset_tokens` (`user_id`, `token`, `created_at`) VALUES (\'24\', \'e26348f78224dfa5d4fc87a365c33e97\', \'2024-03-29 17:26:46\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reset_tokens` (`user_id`, `token`, `created_at`) VALUES (\'24\', \'e26348f78224dfa5d4fc87a365c33e97\', \'2024-03-29 17:26:46\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reset_tokens` (`user_id`, `token`, `created_at`) VALUES (\'24\', \'e26348f78224dfa5d4fc87a365c33e97\', \'2024-03-29 17:26:46\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reset_tokens` (`user_id`, `token`, `created_at`) VALUES (:user_id:, :token:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Useraccount.php(159): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->SendResetLink()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:46:12 --> Invalid file: "user_account/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_account/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('user_account/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(108): view('user_account/resetpassword')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->resetpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:47:36 --> Invalid file: "user_account/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_account/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('user_account/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(108): view('user_account/resetpassword')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->resetpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:47:38 --> Invalid file: "user_account/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_account/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('user_account/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(108): view('user_account/resetpassword')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->resetpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:47:43 --> Invalid file: "user_account/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_account/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('user_account/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(108): view('user_account/resetpassword')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->resetpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:49:43 --> Invalid file: "sys/user_account/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/user_account/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(108): view('sys/user_account/resetpassword')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->resetpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 16:50:30 --> Invalid file: "useraccount/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('useraccount/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('useraccount/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(108): view('useraccount/resetpassword')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->resetpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 17:04:15 --> Invalid file: "sys/user_account/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/user_account/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(152): view('sys/user_account/resetpassword', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->SendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 17:06:03 --> Invalid file: "sys/useraccount/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/useraccount/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/useraccount/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(152): view('sys/useraccount/resetpassword', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->SendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 17:06:14 --> Invalid file: "sys/useraccount/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/useraccount/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/useraccount/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(152): view('sys/useraccount/resetpassword', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->SendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 17:07:46 --> Invalid file: "useraccount/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('useraccount/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('useraccount/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(152): view('useraccount/resetpassword', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->SendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 17:46:16 --> Undefined variable $token
+in APPPATH\Views\sys\user_account\reset_password_form.php on line 4.
+ 1 APPPATH\Views\sys\user_account\reset_password_form.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $token', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password_form.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/reset_password_form', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(108): view('sys/user_account/reset_password_form')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->resetpassword()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 17:46:24 --> Undefined variable $token
+in APPPATH\Views\sys\user_account\reset_password_form.php on line 4.
+ 1 APPPATH\Views\sys\user_account\reset_password_form.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $token', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password_form.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/reset_password_form', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(108): view('sys/user_account/reset_password_form')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->resetpassword()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 21:42:08 --> Undefined variable $token
+in APPPATH\Views\sys\user_account\reset_password.php on line 3.
+ 1 APPPATH\Views\sys\user_account\reset_password.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $token', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/reset_password', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(108): view('sys/user_account/reset_password')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->resetpassword()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 21:44:43 --> Invalid file: "sys/user_account/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/user_account/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(176): view('sys/user_account/resetpassword', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->reset_password('71a5b4d92b217b6dc6041c5051d71389')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 21:46:13 --> Invalid file: "sys/user_account/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/user_account/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/resetpassword', [], true)
+ 3 APPPATH\Controllers\Useraccount.php(176): view('sys/user_account/resetpassword', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->reset_password('71a5b4d92b217b6dc6041c5051d71389')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 21:46:59 --> Undefined variable $token
+in APPPATH\Views\sys\user_account\reset_password.php on line 3.
+ 1 APPPATH\Views\sys\user_account\reset_password.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $token', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/reset_password', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(176): view('sys/user_account/reset_password', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->reset_password('71a5b4d92b217b6dc6041c5051d71389')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 21:49:19 --> Undefined variable $token
+in APPPATH\Views\sys\user_account\reset_password.php on line 3.
+ 1 APPPATH\Views\sys\user_account\reset_password.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $token', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/reset_password', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(108): view('sys/user_account/reset_password')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->resetpassword()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 21:50:13 --> Undefined variable $token
+in APPPATH\Views\sys\user_account\reset_password.php on line 3.
+ 1 APPPATH\Views\sys\user_account\reset_password.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $token', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/reset_password', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(108): view('sys/user_account/reset_password')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->resetpassword()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 21:52:14 --> Cannot redeclare App\Controllers\Useraccount::reset_password()
+in APPPATH\Controllers\Useraccount.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-29 21:52:59 --> Undefined variable $token
+in APPPATH\Views\sys\user_account\reset_password.php on line 3.
+ 1 APPPATH\Views\sys\user_account\reset_password.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $token', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/reset_password', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(108): view('sys/user_account/reset_password')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->reset_password()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 21:54:45 --> Undefined variable $token
+in APPPATH\Views\sys\user_account\reset_password.php on line 3.
+ 1 APPPATH\Views\sys\user_account\reset_password.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $token', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\user_account\\reset_password.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_account/reset_password', [], true)
+ 5 APPPATH\Controllers\Useraccount.php(108): view('sys/user_account/reset_password')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->reset_password()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:01:37 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Useraccount.php on line 209.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Useraccount->save_reset_password()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Useraccount))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:11:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:11:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:11:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:11:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:12:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:12:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:12:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:12:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:16:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:16:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:16:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:16:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'slpost.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:18:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\employee\update_details.php on line 21.
+ 1 APPPATH\Views\sys\employee\update_details.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\update_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/update_details', [], true)
+ 5 APPPATH\Controllers\Employee.php(177): view('sys/employee/update_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->updatedetails('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 22:39:23 --> Class "App\Controllers\LoanTypesModel" not found
+in APPPATH\Controllers\Loanrequest.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Loanrequest->getamount()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loanrequest))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 23:20:18 --> Undefined variable $result
+in APPPATH\Views\sys\employee\profile.php on line 58.
+ 1 APPPATH\Views\sys\employee\profile.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\profile.php', 58)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/profile', [], true)
+ 5 APPPATH\Controllers\Employee.php(127): view('sys/employee/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 23:21:23 --> Undefined variable $result
+in APPPATH\Views\sys\employee\profile.php on line 58.
+ 1 APPPATH\Views\sys\employee\profile.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\profile.php', 58)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pms\\app\\Views\\sys\\employee\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/employee/profile', [], true)
+ 5 APPPATH\Controllers\Employee.php(127): view('sys/employee/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Employee->viewprofile()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
